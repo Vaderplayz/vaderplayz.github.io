@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Le Hai Trung | Robotics & Mechatronics Portfolio</title>
+  <meta name="description" content="Portfolio of Le Hai Trung - Mechatronics, Robotics, Soft Robotics, and UAV projects including PX4 drones, LiDAR/VIO systems, and rehabilitation robotics research." />
+  <meta name="keywords" content="Le Hai Trung, robotics, mechatronics, UAV, PX4, LiDAR, VIO, soft robotics, rehabilitation glove, humanoid robot hand, portfolio" />
+  <meta name="author" content="Le Hai Trung" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background decoration -->
+  <div class="bg-grid"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">LHT</a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text fade-up">
+          <p class="eyebrow">Mechatronics • Robotics • Soft Robotics • UAV</p>
+          <h1>Le Hai Trung</h1>
+          <h2>Building intelligent robotic systems from soft actuators to autonomous drones.</h2>
+          <p class="hero-description">
+            I work on robotics systems that combine hardware, control, sensing, and research-driven design.
+            My projects span PX4-based UAVs, LiDAR/VIO integration, mapping and obstacle avoidance,
+            as well as soft robotic hands and rehabilitation devices.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="assets/resume.pdf" target="_blank">Download Resume</a>
+          </div>
+
+          <div class="hero-tags">
+            <span>PX4</span>
+            <span>ROS / Robotics</span>
+            <span>LiDAR</span>
+            <span>VIO</span>
+            <span>Soft Robotics</span>
+            <span>UAV Systems</span>
+          </div>
+        </div>
+
+        <div class="hero-card fade-up delay-1">
+          <div class="profile-card">
+            <div class="profile-image-wrapper">
+              <!-- Replace with your real image -->
+              <img src="assets/profile.jpg" alt="Portrait of Le Hai Trung" class="profile-image" />
+            </div>
+            <div class="profile-info">
+              <h3>Focus Areas</h3>
+              <ul>
+                <li>Autonomous UAV systems</li>
+                <li>Mapping & obstacle avoidance</li>
+                <li>Soft robotic actuation</li>
+                <li>Research prototypes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <p class="section-label">About</p>
+          <h2>Technical profile</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card fade-up">
+            <h3>Who I am</h3>
+            <p>
+              I am a mechatronics and robotics-focused engineer interested in building systems that
+              combine sensing, actuation, control, and real-world deployment. My work sits at the
+              intersection of autonomous UAVs, soft robotic mechanisms, and human-centered robotic design.
+            </p>
+            <p>
+              I enjoy translating research ideas into working prototypes, especially in projects that require
+              a mix of mechanical design, embedded integration, system-level thinking, and experimental validation.
+            </p>
+          </div>
+
+          <div class="card fade-up delay-1">
+            <h3>Skills</h3>
+            <div class="skills-list">
+              <span>PX4</span>
+              <span>UAV Integration</span>
+              <span>LiDAR</span>
+              <span>VIO</span>
+              <span>Obstacle Avoidance</span>
+              <span>Mapping</span>
+              <span>Soft Robotics</span>
+              <span>Actuator Design</span>
+              <span>Teleoperation</span>
+              <span>Robot Prototyping</span>
+              <span>Mechanical Design</span>
+              <span>Research Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <p class="section-label">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card fade-up">
+            <img src="assets/project-drone.jpg" alt="Autonomous PX4 drone project" class="project-image" />
+            <div class="project-content">
+              <p class="project-type">UAV / Robotics</p>
+              <h3>Autonomous PX4 Drone with LiDAR and VIO</h3>
+              <p>
+                An autonomous UAV platform integrating PX4, LiDAR, and visual-inertial odometry
+                for obstacle avoidance, environmental data collection, and mapping.
+              </p>
+              <div class="project-tags">
+                <span>PX4</span>
+                <span>LiDAR</span>
+                <span>VIO</span>
+                <span>Autonomy</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Demo / Report</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card fade-up delay-1">
+            <img src="assets/project-uav.jpg" alt="UAV built from scratch" class="project-image" />
+            <div class="project-content">
+              <p class="project-type">Hardware / UAV</p>
+              <h3>UAV Built from Scratch</h3>
+              <p>
+                A custom UAV platform developed from the ground up based on the Carbonaeronautics
+                instruction framework, with focus on airframe understanding, assembly, and system integration.
+              </p>
+              <div class="project-tags">
+                <span>UAV</span>
+                <span>Assembly</span>
+                <span>Integration</span>
+                <span>Hardware</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Build Log</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card fade-up">
+            <img src="assets/project-glove.jpg" alt="Soft robotic glove for rehabilitation" class="project-image" />
+            <div class="project-content">
+              <p class="project-type">Research / Soft Robotics</p>
+              <h3>Hybrid Tendon-Hydraulic Soft Robotic Glove</h3>
+              <p>
+                A post-stroke hand rehabilitation glove providing bidirectional finger assistance through
+                a hybrid tendon-hydraulic soft robotic design. This work emphasizes device concept, testing,
+                and communication through figures, text, and video documentation.
+              </p>
+              <div class="project-tags">
+                <span>Soft Robotics</span>
+                <span>Rehabilitation</span>
+                <span>Actuation</span>
+                <span>Research</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">Project Page</a>
+                <a href="#" target="_blank">Paper / Poster</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card fade-up delay-1">
+            <img src="assets/project-hand.jpg" alt="Teleoperated humanoid robotic hand" class="project-image" />
+            <div class="project-content">
+              <p class="project-type">Research / Humanoid Robotics</p>
+              <h3>Teleoperated Humanoid Robotic Hand with Soft Filament Sensor</h3>
+              <p>
+                A tendon-driven humanoid robotic hand integrating servo-controlled soft muscle actuators
+                and a soft filament sensor for teleoperation. The project focuses on mechanism design,
+                sensing integration, and experimental robotic interaction.
+              </p>
+              <div class="project-tags">
+                <span>Humanoid Hand</span>
+                <span>Teleoperation</span>
+                <span>Sensors</span>
+                <span>Soft Actuation</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">Project Page</a>
+                <a href="#" target="_blank">Paper / Video</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <p class="section-label">Experience</p>
+          <h2>Hands-on research and engineering</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <h3>Robotics & Mechatronics Projects</h3>
+              <p class="timeline-meta">Autonomous systems, prototyping, and research implementation</p>
+              <p>
+                Worked across UAV autonomy, sensing integration, rehabilitation robotics, and robotic hand
+                mechanisms. Contributed to hardware build, system design, testing, documentation, and technical presentation.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-up delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <h3>Research-Oriented Development</h3>
+              <p class="timeline-meta">Soft robotics and human-centered robotic systems</p>
+              <p>
+                Developed research prototypes involving tendon-hydraulic actuation, soft muscle integration,
+                sensor-assisted teleoperation, and assistive robotic devices, with strong emphasis on communication through media and technical writing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <p class="section-label">Research</p>
+          <h2>Publications and ongoing work</h2>
+        </div>
+
+        <div class="research-grid">
+          <div class="card fade-up">
+            <h3>Selected Research Topics</h3>
+            <ul class="research-list">
+              <li>A Hybrid Tendon-Hydraulic Soft Robotic Glove for Post-Stroke Hand Rehabilitation with Bidirectional Finger Assistance</li>
+              <li>Integrating Servo-Controlled Soft Muscle Actuators with Tendon-Driven Mechanisms for a Teleoperated Humanoid Robotic Hand using Soft Filament Sensor</li>
+            </ul>
+          </div>
+
+          <div class="card fade-up delay-1">
+            <h3>How to use this section</h3>
+            <p>
+              Later, you can replace this with formal citations, conference posters, thesis work,
+              or links to PDFs, videos, and datasets.
+            </p>
+            <a class="btn btn-secondary small-btn" href="assets/resume.pdf" target="_blank">View Resume / CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <p class="section-label">Contact</p>
+          <h2>Let’s connect</h2>
+        </div>
+
+        <div class="contact-card card fade-up">
+          <p>
+            I am open to research collaboration, lab opportunities, and conversations about robotics,
+            autonomous systems, and soft robotic design.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Le Hai Trung. Built with HTML, CSS, and GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
