@@ -239,7 +239,6 @@ a {
 }
 
 .hero-tags span,
-.skills-list span,
 .project-tags span {
   padding: 8px 12px;
   border-radius: 999px;
@@ -315,9 +314,45 @@ a {
 }
 
 .skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.skill-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 16px 14px 18px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.1), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform var(--transition), border var(--transition), box-shadow var(--transition);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.28);
+}
+
+.skill-image {
+  width: 100%;
+  max-width: 112px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18));
+}
+
+.skill-card h4 {
+  color: var(--heading);
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-weight: 700;
 }
 
 /* =========================
@@ -528,6 +563,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .skills-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero {
     min-height: auto;
     padding-top: 70px;
@@ -574,22 +613,41 @@ a {
     align-items: flex-start;
   }
 
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 18px;
+  }
+
   .section {
     padding: 72px 0;
   }
 }
 
 .lab-button {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent), #2563eb);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #22c55e, var(--accent), #2563eb);
   color: white;
-  font-weight: 600;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 24px rgba(34, 197, 94, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .lab-button:hover {
   transform: translateY(-2px);
-  opacity: 0.95;
+  opacity: 1;
+  filter: brightness(1.05);
+  box-shadow: 0 14px 28px rgba(56, 189, 248, 0.24), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+}
+
+.lab-button:focus-visible {
+  outline: 3px solid rgba(56, 189, 248, 0.35);
+  outline-offset: 3px;
 }
