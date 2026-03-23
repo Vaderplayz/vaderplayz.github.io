@@ -451,6 +451,37 @@ a {
 /* =========================
    Timeline
 ========================= */
+.experience-tracks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.experience-track {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  padding: 24px 24px 8px;
+}
+
+.experience-track-header {
+  margin-bottom: 18px;
+}
+
+.experience-track-label {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.experience-track-header h3 {
+  color: var(--heading);
+  font-size: 1.45rem;
+}
 .timeline {
   position: relative;
   margin-top: 20px;
@@ -481,6 +512,20 @@ a {
   border-radius: 50%;
   background: var(--accent);
   box-shadow: 0 0 0 5px rgba(56, 189, 248, 0.15);
+}
+
+.timeline-stamp {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  color: #dbeafe;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .timeline-meta {
@@ -563,7 +608,8 @@ a {
   .hero-content,
   .about-grid,
   .research-grid,
-  .projects-grid {
+  .projects-grid,
+  .experience-tracks {
     grid-template-columns: 1fr;
   }
 
@@ -655,4 +701,7 @@ a {
   outline: 3px solid rgba(56, 189, 248, 0.35);
   outline-offset: 3px;
 }
+
+
+
 
