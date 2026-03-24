@@ -309,13 +309,20 @@ a {
 .about-grid,
 .research-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+.about-grid {
+  grid-template-columns: 1fr;
+}
+
+.research-grid {
+  grid-template-columns: 1fr 1fr;
 }
 
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   margin-top: 18px;
 }
@@ -655,8 +662,11 @@ a {
   }
 
   .skills-list {
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
 
   .skill-card {
     padding: 18px;
@@ -692,6 +702,9 @@ a {
   outline: 3px solid rgba(56, 189, 248, 0.35);
   outline-offset: 3px;
 }
+
+
+
 
 
 
