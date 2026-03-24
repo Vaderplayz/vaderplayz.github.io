@@ -462,6 +462,36 @@ a {
   transform: scaleX(1);
 }
 
+.project-links a.has-preview::before {
+  content: attr(data-preview);
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 10px);
+  min-width: 220px;
+  max-width: 280px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(11, 17, 32, 0.96);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.project-links a.has-preview:hover::before,
+.project-links a.has-preview:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 /* =========================
    Timeline
 ========================= */
