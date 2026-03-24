@@ -322,7 +322,7 @@ a {
 
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
   margin-top: 18px;
 }
@@ -612,7 +612,7 @@ a {
   }
 
   .skills-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .hero {
@@ -626,6 +626,12 @@ a {
 }
 
 @media (max-width: 760px) {
+  .skills-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .skills-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .nav {
     position: absolute;
     top: 72px;
@@ -663,7 +669,7 @@ a {
 
   .skills-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
   margin-top: 18px;
 }
@@ -702,6 +708,8 @@ a {
   outline: 3px solid rgba(56, 189, 248, 0.35);
   outline-offset: 3px;
 }
+
+
 
 
 
