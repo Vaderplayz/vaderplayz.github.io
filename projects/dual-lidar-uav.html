@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dual-2D-LiDAR UAV | Le Hai Trung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail{padding:96px 0}.project-detail h1{font-size:clamp(2.2rem,5vw,4rem);color:var(--heading);line-height:1.1;margin-bottom:16px}.project-lead{max-width:900px;color:var(--muted);font-size:1.05rem;margin-bottom:28px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.detail-panel{overflow:hidden;padding:0}.detail-panel img{width:100%;height:300px;object-fit:cover}.detail-panel-content{padding:24px}.detail-panel h2{color:var(--heading);margin-bottom:12px}.detail-panel ul{color:var(--muted);padding-left:20px;display:grid;gap:8px}.detail-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.detail-links a{padding:9px 13px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.18);font-weight:600}.media-note{margin-top:24px}.back-link{display:inline-flex;margin-bottom:28px;color:var(--accent);font-weight:700}@media(max-width:850px){.detail-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <main class="project-detail">
+    <div class="container">
+      <a class="back-link" href="../index.html#projects">← Back to portfolio</a>
+      <p class="section-label">Flagship UAV Project</p>
+      <h1>Dual-2D-LiDAR UAV for Indoor SLAM, 3D Reconstruction, and Precision Landing</h1>
+      <p class="project-lead">One project developed through two stages: simulation validation and real-world deployment. The same system architecture connects PX4, ROS 2, LiDAR mapping, point-cloud reconstruction, and AprilTag-based precision landing in GPS-denied environments.</p>
+
+      <div class="detail-grid">
+        <article class="card detail-panel">
+          <img src="../assets/Project 1 - drone/project-drone.jpg" alt="Simulation and UAV system development" />
+          <div class="detail-panel-content">
+            <p class="project-type">Panel 1</p>
+            <h2>Simulation and Pipeline Validation</h2>
+            <ul>
+              <li>Validated the architecture using PX4 SITL, ROS 2, and RViz.</li>
+              <li>Tested lawnmower, spiral, and diagonal survey trajectories.</li>
+              <li>Used a horizontal virtual LiDAR for 2D SLAM and a vertical virtual LiDAR for sequential scans.</li>
+              <li>Stitched scans with UAV pose estimates to generate a 3D point cloud.</li>
+              <li>Used the simulation stage to debug coordinate frames, scan orientation, pose synchronization, and map generation before hardware deployment.</li>
+            </ul>
+            <div class="detail-links">
+              <a href="https://youtu.be/FXyLhvrWZbU?t=915" target="_blank" rel="noopener noreferrer">2D SLAM Demo</a>
+              <a href="https://youtu.be/_i1odhAnNYk" target="_blank" rel="noopener noreferrer">3D Mapping Demo</a>
+              <a href="https://github.com/Vaderplayz/3D-Environment-construction-for-PX4-drone-with-2D-lidar-and-obstacle-avoidance.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card detail-panel">
+          <img src="../assets/Project 1 - drone/project-drone.jpg" alt="Real-world UAV deployment" />
+          <div class="detail-panel-content">
+            <p class="project-type">Panel 2</p>
+            <h2>Real-World Deployment</h2>
+            <ul>
+              <li>Built and integrated a custom 10-inch PX4 UAV with Raspberry Pi 5.</li>
+              <li>Deployed horizontal-LiDAR indoor SLAM on the physical platform.</li>
+              <li>Integrated a second vertical LiDAR for real environmental scanning and point-cloud reconstruction.</li>
+              <li>Tested AprilTag detection, local-pose estimation, and precision landing without GPS.</li>
+              <li>Performed hardware debugging, flight testing, power-system troubleshooting, ROS 2 integration, and map-quality evaluation.</li>
+              <li>Vertical-LiDAR reconstruction remains under active improvement and is presented as ongoing work.</li>
+            </ul>
+            <div class="detail-links">
+              <a href="../assets/projects/01-dual-lidar-uav/README.md">Media Folder</a>
+              <a href="../index.html#gallery">Portfolio Gallery</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="card media-note">
+        <h3>Uploaded media set</h3>
+        <p>The selected media set includes the physical UAV, CAD configuration, simulation point cloud, real SLAM maps, real vertical-LiDAR point clouds, AprilTag/RViz verification, and field landing-test setup. These files are being organized under <code>assets/projects/01-dual-lidar-uav/</code>.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
