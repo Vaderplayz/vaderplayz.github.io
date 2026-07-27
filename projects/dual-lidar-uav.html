@@ -9,17 +9,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    .project-detail{padding:96px 0}.project-detail h1{font-size:clamp(2.2rem,5vw,4rem);color:var(--heading);line-height:1.1;margin-bottom:16px}.project-lead{max-width:920px;color:var(--muted);font-size:1.05rem;margin-bottom:34px}.system-summary{margin-bottom:34px}.system-summary p{color:var(--muted);max-width:980px}.project-section{margin-top:46px}.project-section h2{color:var(--heading);font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:10px}.project-section>p{color:var(--muted);max-width:980px;margin-bottom:20px}.section-cover{width:100%;height:380px;object-fit:cover;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);margin-bottom:22px}.detail-list{color:var(--muted);padding-left:20px;display:grid;gap:8px;margin-bottom:18px}.detail-links{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 8px}.detail-links a{padding:9px 13px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.18);font-weight:600}.media-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}.media-item{overflow:hidden;padding:0}.media-item img{width:100%;height:300px;object-fit:cover}.media-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px}.media-pair img{height:240px;border-radius:10px}.media-caption{padding:16px 18px 18px}.media-caption h3{margin-bottom:6px}.media-caption p{color:var(--muted)}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}.video-card{overflow:hidden;padding:0}.video-card iframe,.video-card video{width:100%;aspect-ratio:16/9;border:0;display:block;background:#000}.video-card .media-caption{padding:16px 18px 18px}.data-links{margin-top:26px}.back-link{display:inline-flex;margin-bottom:28px;color:var(--accent);font-weight:700}@media(max-width:850px){.media-gallery,.video-grid{grid-template-columns:1fr}.section-cover{height:280px}.media-item img{height:auto}.media-pair{grid-template-columns:1fr}.media-pair img{height:auto}}
+    .project-detail{padding:132px 0 96px}.project-detail h1{font-size:clamp(2.2rem,5vw,4rem);color:var(--heading);line-height:1.1;margin-bottom:16px}.project-lead{max-width:920px;color:var(--muted);font-size:1.05rem;margin-bottom:34px}.system-summary{margin-bottom:34px}.system-summary p{color:var(--muted);max-width:980px}.project-section{margin-top:46px}.project-section h2{color:var(--heading);font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:10px}.project-section>p{color:var(--muted);max-width:980px;margin-bottom:20px}.section-cover{width:100%;height:380px;object-fit:cover;border-radius:18px;border:1px solid var(--panel-border);box-shadow:var(--shadow);margin-bottom:22px}.detail-list{color:var(--muted);padding-left:20px;display:grid;gap:8px;margin-bottom:18px}.detail-links{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 8px}.detail-links a{padding:9px 13px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.18);font-weight:600}.media-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}.media-item{overflow:hidden;padding:0}.media-item img{width:100%;height:300px;object-fit:cover}.media-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px}.media-pair img{height:240px;border-radius:10px}.media-caption{padding:16px 18px 18px}.media-caption h3{margin-bottom:6px}.media-caption p{color:var(--muted)}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}.video-card{overflow:hidden;padding:0}.video-card iframe,.video-card video{width:100%;aspect-ratio:16/9;border:0;display:block;background:#000}.video-card .media-caption{padding:16px 18px 18px}.data-links{margin-top:26px}.back-link{display:inline-flex;margin-bottom:28px;color:var(--accent);font-weight:700}@media(max-width:850px){.project-detail{padding-top:112px}.media-gallery,.video-grid{grid-template-columns:1fr}.section-cover{height:280px}.media-item img{height:auto}.media-pair{grid-template-columns:1fr}.media-pair img{height:auto}}
   </style>
 </head>
 <body>
   <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html#home" class="logo">LHT</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#gallery">Gallery</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
   <main class="project-detail">
     <div class="container">
-      <a class="back-link" href="../index.html#projects">← Back to portfolio</a>
-      <p class="section-label">Flagship UAV Project</p>
+      <a class="back-link" href="../index.html#projects">← Back to projects</a>
       <h1>Dual-2D-LiDAR UAV for Indoor SLAM, 3D Reconstruction, and Precision Landing</h1>
-      <p class="project-lead">This project was developed in two connected stages: simulation validation and real-world deployment. The system combines PX4, ROS 2, horizontal-LiDAR SLAM, vertical-LiDAR scan accumulation, UAV pose estimation, and AprilTag-based precision landing for indoor GPS-denied operation.</p>
+      <p class="project-lead">This project was developed through simulation validation and real-world deployment. The system combines PX4, ROS 2, horizontal-LiDAR SLAM, vertical-LiDAR scan accumulation, UAV pose estimation, and AprilTag-based precision landing for indoor GPS-denied operation.</p>
 
       <section class="card system-summary">
         <h2>System Overview</h2>
@@ -27,9 +42,8 @@
       </section>
 
       <section class="project-section">
-        <p class="project-type">Stage 1</p>
         <h2>Simulation and Pipeline Validation</h2>
-        <p>The software architecture was first validated in PX4 SITL, ROS 2, Gazebo, and RViz. This stage was used to test survey trajectories, coordinate frames, LiDAR orientation, pose synchronization, scan transformation, and 3D point-cloud generation before deployment on hardware.</p>
+        <p>The software architecture was first validated in PX4 SITL, ROS 2, Gazebo, and RViz. This work tested survey trajectories, coordinate frames, LiDAR orientation, pose synchronization, scan transformation, and 3D point-cloud generation before deployment on hardware.</p>
         <img class="section-cover" src="../assets/Project 1 - drone/project-drone.jpg" alt="PX4 SITL and Gazebo simulation environment" />
         <ul class="detail-list">
           <li>Tested lawnmower, spiral, and diagonal survey trajectories.</li>
@@ -55,7 +69,6 @@
       </section>
 
       <section class="project-section">
-        <p class="project-type">Stage 2</p>
         <h2>Real-World Deployment</h2>
         <p>The pipeline was then deployed on a custom PX4 UAV with a Raspberry Pi 5. Real testing covered physical sensor integration, horizontal-LiDAR indoor SLAM, vertical-LiDAR scan accumulation, AprilTag pose estimation, and precision-landing experiments. The real 3D reconstruction pipeline is functional but remains under active improvement.</p>
         <img class="section-cover" src="../assets/projects/01-dual-lidar-uav/7bdfe90ea68027de7e91.jpg" alt="Physical dual-LiDAR UAV used for real-world deployment" />
@@ -82,7 +95,7 @@
 
         <div class="card data-links">
           <h3>Raw mapping data</h3>
-          <p>Selected PCD point clouds, PGM maps, YAML metadata, and trajectory CSV files are included in the project asset folder for technical review.</p>
+          <p>Selected PCD point clouds, PGM maps, YAML metadata, and trajectory CSV files are included for technical review.</p>
           <div class="detail-links">
             <a href="../assets/projects/01-dual-lidar-uav/lidar2_vertical_global_map_1784362883_315237767.pcd" download>Download PCD sample</a>
             <a href="../assets/projects/01-dual-lidar-uav/lidar2_vertical_map2d_1784362883_315237767.pgm" download>Download vertical map</a>
@@ -93,5 +106,6 @@
       </section>
     </div>
   </main>
+  <script src="../script.js"></script>
 </body>
 </html>
