@@ -9,7 +9,6 @@ if (menuToggle && nav) {
     nav.classList.toggle("open");
   });
 
-  // Close menu when a nav link is clicked
   document.querySelectorAll(".nav a").forEach(link => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
@@ -20,45 +19,52 @@ if (menuToggle && nav) {
 // ===============================
 // Project detail navigation
 // ===============================
-const flagshipProject = document.querySelector("#projects .project-card");
+const projectDetails = [
+  {
+    card: document.querySelector("#projects .project-card:nth-child(1)"),
+    url: "projects/dual-lidar-uav.html",
+    label: "Open the full Dual-2D-LiDAR UAV project page"
+  },
+  {
+    card: document.querySelector("#projects .project-card:nth-child(2)"),
+    url: "projects/teensy-quadcopter.html",
+    label: "Open the full Teensy 4.1 quadcopter project page"
+  }
+];
 
-if (flagshipProject) {
-  const detailUrl = "projects/dual-lidar-uav.html";
-  flagshipProject.setAttribute("role", "link");
-  flagshipProject.setAttribute("tabindex", "0");
-  flagshipProject.setAttribute(
-    "aria-label",
-    "Open the full Dual-2D-LiDAR UAV project page"
-  );
-  flagshipProject.style.cursor = "pointer";
+projectDetails.forEach(({ card, url, label }) => {
+  if (!card) return;
 
-  // Add a visible detail-page link without replacing the existing GitHub/video links.
-  const projectLinks = flagshipProject.querySelector(".project-links");
+  card.setAttribute("role", "link");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", label);
+  card.style.cursor = "pointer";
+
+  const projectLinks = card.querySelector(".project-links");
   if (projectLinks && !projectLinks.querySelector(".project-detail-link")) {
     const detailLink = document.createElement("a");
-    detailLink.href = detailUrl;
+    detailLink.href = url;
     detailLink.className = "project-detail-link";
     detailLink.textContent = "Full Project Page";
     projectLinks.prepend(detailLink);
   }
 
   const openDetailPage = () => {
-    window.location.href = detailUrl;
+    window.location.href = url;
   };
 
-  flagshipProject.addEventListener("click", event => {
-    // Preserve the behavior of GitHub, YouTube, and other links inside the card.
+  card.addEventListener("click", event => {
     if (event.target.closest("a")) return;
     openDetailPage();
   });
 
-  flagshipProject.addEventListener("keydown", event => {
+  card.addEventListener("keydown", event => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
       openDetailPage();
     }
   });
-}
+});
 
 // ===============================
 // Reveal on scroll animation
