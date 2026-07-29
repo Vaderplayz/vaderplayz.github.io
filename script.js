@@ -57,6 +57,50 @@ projectDetails.forEach(({ card, url, label }) => {
 });
 
 // ===============================
+// Previous / next navigation on project pages
+// ===============================
+const projectPageOrder = [
+  { file: "dual-lidar-uav.html", name: "Dual-LiDAR UAV" },
+  { file: "teensy-quadcopter.html", name: "Teensy 4.1 Quadcopter" },
+  { file: "soft-robotic-glove.html", name: "Soft Robotic Glove" },
+  { file: "teleoperated-humanoid-hand.html", name: "Teleoperated Humanoid Hand" },
+  { file: "double-attack-thrombectomy.html", name: "Mechanical Thrombectomy" },
+  { file: "tool-interchange-arm.html", name: "Tool-Interchange Arm" },
+  { file: "automated-pen-refill-machine.html", name: "Pen Refill Machine" }
+];
+
+const currentProjectFile = window.location.pathname.split("/").pop();
+const currentProjectIndex = projectPageOrder.findIndex(project => project.file === currentProjectFile);
+const existingBackLink = document.querySelector(".project-detail .back-link");
+
+if (currentProjectIndex !== -1 && existingBackLink) {
+  existingBackLink.href = "../projects.html";
+  existingBackLink.textContent = "← Back to projects";
+
+  const nextProject = projectPageOrder[(currentProjectIndex + 1) % projectPageOrder.length];
+  const navRow = document.createElement("div");
+  navRow.className = "project-page-nav";
+
+  existingBackLink.parentNode.insertBefore(navRow, existingBackLink);
+  navRow.appendChild(existingBackLink);
+
+  const nextLink = document.createElement("a");
+  nextLink.className = "next-project-link";
+  nextLink.href = nextProject.file;
+  nextLink.textContent = `Next project: ${nextProject.name} →`;
+  navRow.appendChild(nextLink);
+
+  const projectNavStyle = document.createElement("style");
+  projectNavStyle.textContent = `
+    .project-page-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:28px}
+    .project-page-nav .back-link{margin-bottom:0}
+    .next-project-link{display:inline-flex;color:var(--accent);font-weight:700;text-align:right}
+    @media(max-width:640px){.project-page-nav{align-items:flex-start;flex-direction:column}.next-project-link{text-align:left}}
+  `;
+  document.head.appendChild(projectNavStyle);
+}
+
+// ===============================
 // Homepage project media and text
 // ===============================
 function updateProjectCard(index, options) {
@@ -123,7 +167,7 @@ updateProjectCard(6, {
 });
 
 updateProjectCard(7, {
-  image: "assets/projects/07-pen-refill-machine/611011229_2129339574489040_226497718373618663_n.jpg",
+  image: "assets/projects/07-pen-refill-machine/thumbnail.jpg",
   alt: "Automated whiteboard-pen refill machine",
   description: "A complete mechatronic machine that automates whiteboard-pen handling and ink refilling through coordinated mechanical, electrical, and control subsystems."
 });
