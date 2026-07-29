@@ -80,15 +80,17 @@ projectDetails.forEach(({ card, url, label }) => {
 const ongoingResearchCards = [
   {
     card: document.querySelector("#projects .project-card:nth-child(3)"),
-    description: "Ongoing co-first-author research on a rehabilitation glove combining compliant soft muscles with tendon-driven assistance. The current page uses only approved public media while the research and associated paper remain in development."
+    description: "Ongoing co-first-author research on a rehabilitation glove combining compliant soft muscles with tendon-driven assistance. The current page uses only approved public media.",
+    status: "Research status: Ongoing research; manuscript under review."
   },
   {
     card: document.querySelector("#projects .project-card:nth-child(4)"),
-    description: "Ongoing first-author research integrating a tendon-driven humanoid hand, soft filament sensors, soft-muscle actuation, and MATLAB/Simulink control for real-time teleoperation. Only currently approved public media are shown while the research and associated paper remain in development."
+    description: "Ongoing first-author research integrating a tendon-driven humanoid hand, soft filament sensors, soft-muscle actuation, and MATLAB/Simulink control for real-time teleoperation. Only currently approved public media are shown.",
+    status: "Research status: Ongoing research; manuscript under review."
   }
 ];
 
-ongoingResearchCards.forEach(({ card, description }) => {
+ongoingResearchCards.forEach(({ card, description, status }) => {
   if (!card) return;
 
   const descriptionElement = card.querySelector(".project-content > p:not(.project-type)");
@@ -96,6 +98,19 @@ ongoingResearchCards.forEach(({ card, description }) => {
 
   const projectType = card.querySelector(".project-type");
   if (projectType) projectType.textContent = "Ongoing Research / Soft Robotics";
+
+  const projectLinks = card.querySelector(".project-links");
+  if (projectLinks) {
+    projectLinks.querySelectorAll('a[href="#research"]').forEach(link => link.remove());
+
+    let statusText = projectLinks.querySelector(".research-status-text");
+    if (!statusText) {
+      statusText = document.createElement("span");
+      statusText.className = "research-status-text";
+      projectLinks.appendChild(statusText);
+    }
+    statusText.textContent = status;
+  }
 });
 
 // ===============================
@@ -118,6 +133,7 @@ if (contactSection && !document.getElementById("certifications")) {
     .certification-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
     .certification-actions a{padding:9px 13px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.18);font-weight:700}
     .certification-card.primary{border-color:rgba(56,189,248,.35);box-shadow:0 14px 40px rgba(0,0,0,.3)}
+    .research-status-text{display:inline-block;color:var(--muted);font-weight:600;line-height:1.5}
     @media(max-width:950px){.certification-card{grid-template-columns:120px minmax(0,1fr)}.certification-logo{height:120px}.certification-logo-wrap{min-height:145px}}
     @media(max-width:760px){.certifications-grid{grid-template-columns:1fr}.certification-card{grid-template-columns:110px minmax(0,1fr)}}
     @media(max-width:520px){.certification-card{grid-template-columns:1fr}.certification-logo-wrap{min-height:150px}.certification-logo{height:130px}}
