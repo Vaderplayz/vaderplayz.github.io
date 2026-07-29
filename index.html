@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .highlight-list{display:grid;gap:14px;margin-top:26px}.highlight-project{display:grid;grid-template-columns:170px minmax(0,1fr);align-items:center;gap:22px;padding:14px 18px;text-decoration:none}.highlight-project img{display:block;width:170px;height:96px;object-fit:cover;border-radius:12px;background:#0b1120}.highlight-project h3{color:var(--heading);font-size:1.05rem;line-height:1.35}.highlight-project:hover{transform:translateY(-2px);border-color:rgba(56,189,248,.42)}.section-action{margin-top:24px}.section-action .btn{display:inline-flex}@media(max-width:620px){.highlight-project{grid-template-columns:110px minmax(0,1fr);gap:14px}.highlight-project img{width:110px;height:74px}.highlight-project h3{font-size:.95rem}}
+  </style>
 </head>
 <body>
   <div class="bg-grid"></div>
@@ -19,10 +22,9 @@
       <a href="#home" class="logo">LHT</a>
       <nav class="nav" id="nav">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
+        <a href="projects.html">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#research">Research</a>
+        <a href="research.html">Research</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -36,33 +38,11 @@
           <p class="eyebrow">Mechatronics • Robotics • Soft Robotics • UAV</p>
           <h1>Le Hai Trung</h1>
           <h2>VinUniversity, Hanoi, Vietnam</h2>
-          <p class="hero-description">
-            I am a final-year Mechanical Engineering undergraduate focused on robotics and mechatronics. I build systems that combine sensing, actuation, control, and real-world deployment across soft robotics, humanoid-hand teleoperation, autonomous UAVs, and LiDAR-based mapping.
-          </p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="assets/General/Trung_CV_Eng.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-          </div>
-          <div class="hero-tags">
-            <span>PX4</span><span>ROS 2 / Robotics</span><span>Soft Robotics</span><span>UAV Systems</span><span>3D Design and Simulation</span>
-          </div>
+          <p class="hero-description">I am a final-year Mechanical Engineering undergraduate focused on robotics and mechatronics. I build systems that combine sensing, actuation, control, and real-world deployment across soft robotics, humanoid-hand teleoperation, autonomous UAVs, and LiDAR-based mapping.</p>
+          <div class="hero-buttons"><a class="btn btn-primary" href="projects.html">View Projects</a><a class="btn btn-secondary" href="assets/General/Trung_CV_Eng.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a></div>
+          <div class="hero-tags"><span>PX4</span><span>ROS 2 / Robotics</span><span>Soft Robotics</span><span>UAV Systems</span><span>3D Design and Simulation</span></div>
         </div>
-
-        <div class="hero-card fade-up delay-1">
-          <div class="profile-card">
-            <div class="profile-image-wrapper">
-              <img src="assets/General/portrait.jpg" alt="Portrait of Le Hai Trung" class="profile-image" />
-            </div>
-            <div class="profile-info">
-              <h3>About me</h3>
-              <ul>
-                <li>Final-year Mechanical Engineering undergraduate</li>
-                <li>VinUniversity 2023–2027</li>
-                <li><a href="https://bioroboticslaboratory.com/" target="_blank" rel="noopener noreferrer" class="lab-button">VinUni Biorobotics Lab</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <div class="hero-card fade-up delay-1"><div class="profile-card"><div class="profile-image-wrapper"><img src="assets/General/portrait.jpg" alt="Portrait of Le Hai Trung" class="profile-image" /></div><div class="profile-info"><h3>About me</h3><ul><li>Final-year Mechanical Engineering undergraduate</li><li>VinUniversity 2023–2027</li><li><a href="https://bioroboticslaboratory.com/" target="_blank" rel="noopener noreferrer" class="lab-button">VinUni Biorobotics Lab</a></li></ul></div></div></div>
       </div>
     </section>
 
@@ -70,233 +50,30 @@
       <div class="container">
         <div class="section-heading fade-up"><p class="section-label">About</p><h2>Technical profile</h2></div>
         <div class="about-grid">
-          <div class="card fade-up about-intro-card">
-            <h3>Field of Interest</h3>
-            <p>I am especially interested in robotics and mechatronics, soft robotics, UAV autonomy, robot perception, mapping and navigation, and control systems. My work is driven by building practical robotic systems that connect sensing, actuation, control, and real-world deployment.</p>
-          </div>
-          <div class="card fade-up delay-1 about-skills-card">
-            <h3>Skills</h3>
-            <div class="skills-list">
-              <article class="skill-card"><img src="assets/skills/px4.png" alt="PX4 Autopilot" class="skill-image" /><h4>PX4 Autopilot</h4></article>
-              <article class="skill-card"><img src="assets/skills/2.png" alt="UAV Integration" class="skill-image" /><h4>UAV Integration</h4></article>
-              <article class="skill-card"><img src="assets/skills/7.png" alt="Robot Operating System" class="skill-image" /><h4>Robot Operating System</h4></article>
-              <article class="skill-card"><img src="assets/skills/pi.png" alt="Raspberry Pi" class="skill-image" /><h4>Raspberry Pi</h4></article>
-              <article class="skill-card"><img src="assets/skills/1.png" alt="Arduino and ESP32" class="skill-image" /><h4>Arduino / ESP32</h4></article>
-              <article class="skill-card"><img src="assets/skills/5.png" alt="Soft Robotics" class="skill-image" /><h4>Soft Robotics</h4></article>
-              <article class="skill-card"><img src="assets/skills/matlab.png" alt="MATLAB" class="skill-image" /><h4>MATLAB</h4></article>
-              <article class="skill-card"><img src="assets/skills/4.png" alt="Mechanical Design" class="skill-image" /><h4>Mechanical Design</h4></article>
-              <article class="skill-card"><img src="assets/skills/6.png" alt="Simulation" class="skill-image" /><h4>Simulation</h4></article>
-              <article class="skill-card"><img src="assets/skills/3.png" alt="Mechatronic System" class="skill-image" /><h4>Mechatronic System</h4></article>
-            </div>
-          </div>
+          <div class="card fade-up about-intro-card"><h3>Field of Interest</h3><p>I am especially interested in robotics and mechatronics, soft robotics, UAV autonomy, robot perception, mapping and navigation, and control systems. My work is driven by building practical robotic systems that connect sensing, actuation, control, and real-world deployment.</p></div>
+          <div class="card fade-up delay-1 about-skills-card"><h3>Skills</h3><div class="skills-list"><article class="skill-card"><img src="assets/skills/px4.png" alt="PX4 Autopilot" class="skill-image" /><h4>PX4 Autopilot</h4></article><article class="skill-card"><img src="assets/skills/2.png" alt="UAV Integration" class="skill-image" /><h4>UAV Integration</h4></article><article class="skill-card"><img src="assets/skills/7.png" alt="Robot Operating System" class="skill-image" /><h4>Robot Operating System</h4></article><article class="skill-card"><img src="assets/skills/pi.png" alt="Raspberry Pi" class="skill-image" /><h4>Raspberry Pi</h4></article><article class="skill-card"><img src="assets/skills/1.png" alt="Arduino and ESP32" class="skill-image" /><h4>Arduino / ESP32</h4></article><article class="skill-card"><img src="assets/skills/5.png" alt="Soft Robotics" class="skill-image" /><h4>Soft Robotics</h4></article><article class="skill-card"><img src="assets/skills/matlab.png" alt="MATLAB" class="skill-image" /><h4>MATLAB</h4></article><article class="skill-card"><img src="assets/skills/4.png" alt="Mechanical Design" class="skill-image" /><h4>Mechanical Design</h4></article><article class="skill-card"><img src="assets/skills/6.png" alt="Simulation" class="skill-image" /><h4>Simulation</h4></article><article class="skill-card"><img src="assets/skills/3.png" alt="Mechatronic System" class="skill-image" /><h4>Mechatronic System</h4></article></div></div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="highlights" class="section">
       <div class="container">
-        <div class="section-heading fade-up"><p class="section-label">Projects</p><h2>Selected work</h2></div>
-        <div class="projects-grid">
-          <article class="project-card fade-up">
-            <img src="assets/Project 1 - drone/project-drone.jpg" alt="Dual-LiDAR autonomous PX4 drone" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">UAV / Robotics</p>
-              <h3>Dual-2D-LiDAR UAV for Indoor SLAM, 3D Reconstruction, and Precision Landing</h3>
-              <p>A custom 10-inch PX4 UAV using one horizontal 2D LiDAR for indoor SLAM and one vertical 2D LiDAR for sequential scanning and 3D point-cloud reconstruction. The concept was validated in PX4 SITL and RViz, then deployed on a physical platform with Raspberry Pi 5. The system also supports AprilTag-based precision landing in a GPS-denied local frame.</p>
-              <div class="project-tags"><span>PX4</span><span>ROS 2</span><span>LiDAR</span><span>SLAM</span><span>AprilTag</span></div>
-              <div class="project-links">
-                <a href="https://github.com/Vaderplayz/3D-Environment-construction-for-PX4-drone-with-2D-lidar-and-obstacle-avoidance.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://youtu.be/FXyLhvrWZbU?t=915" target="_blank" rel="noopener noreferrer">2D Demo</a>
-                <a href="https://youtu.be/_i1odhAnNYk" target="_blank" rel="noopener noreferrer">3D Demo Mapping</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up delay-1">
-            <img src="assets/project 2 - IPS/ips.png" alt="Custom quadcopter" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Hardware / UAV</p>
-              <h3>Custom Quadcopter Using Teensy 4.1 and MPU6050</h3>
-              <p>A group-led quadcopter project involving X-frame layout, 3D-printed parts, a constrained test rig, vibration troubleshooting, carbon-fiber redesign, ANSYS validation, PID tuning, and successful flight.</p>
-              <div class="project-tags"><span>UAV</span><span>Teensy 4.1</span><span>PID</span><span>ANSYS</span></div>
-              <div class="project-links">
-                <a href="https://github.com/Vaderplayz/Carbon-Aeuronautic-Drone-IPS-Course.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="assets/project 2 - IPS/project-2-build-log.pdf" target="_blank">Build Log</a>
-                <a href="assets/project 2 - IPS/Demoday 1-video.mp4" target="_blank">Demo Video</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <img src="assets/Project 3 - Soft Robotic Glove/thumbnail.jpg" alt="Soft robotic glove" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Research / Soft Robotics</p>
-              <h3>Hybrid Soft Muscle–Tendon Rehabilitation Glove</h3>
-              <p>Co-first-author research on a post-stroke rehabilitation glove using soft muscles and tendon-driven assistance. My contribution included system design, prototype development, actuator fabrication, integration, and experimental testing.</p>
-              <div class="project-tags"><span>Soft Robotics</span><span>Rehabilitation</span><span>Actuation</span><span>Research</span></div>
-              <div class="project-links"><a href="#research">Research Status</a></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up delay-1">
-            <img src="assets/Project 4 - Tendon Robotic arm/thumbnail.png" alt="Teleoperated humanoid robotic hand" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Research / Humanoid Robotics</p>
-              <h3>Teleoperated Humanoid Robotic Hand with Soft Filament Sensor</h3>
-              <p>First-author project integrating a 3D-printed tendon-driven hand, lab-developed soft filament sensors, servo-controlled soft muscle actuators, and MATLAB/Simulink control for real-time teleoperation.</p>
-              <div class="project-tags"><span>Humanoid</span><span>Teleoperation</span><span>Soft Sensors</span><span>Soft Actuation</span></div>
-              <div class="project-links"><a href="#research">Research Status</a></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <img src="assets/placeholders/project-placeholder.svg" alt="Mechanical thrombectomy project placeholder" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Research / Soft Robotics</p>
-              <h3>Double-Attack Mechanical Thrombectomy</h3>
-              <p>First-author proof-of-concept thrombectomy device combining rotational clot interaction with soft-actuator-driven axial reciprocation. Benchtop testing showed approximately 7% localized suction improvement.</p>
-              <div class="project-tags"><span>Soft Actuation</span><span>Proof of Concept</span><span>Experimental Testing</span><span>ICARCV 2026</span></div>
-              <div class="project-links"><a href="#research">Research Status</a></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up delay-1">
-            <img src="assets/placeholders/project-placeholder.svg" alt="Tool interchange system placeholder" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Course Project / Robotics</p>
-              <h3>Automatic Tool-Interchange System for a Humanoid Robotic Arm</h3>
-              <p>A group-led tool-changing station inspired by CNC workflows, using electromagnetic coupling, alignment features, servo sequencing, and integrated electrical contact pins for autonomous tool exchange.</p>
-              <div class="project-tags"><span>Humanoid Robotics</span><span>Tool Changer</span><span>System Integration</span><span>Control</span></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <img src="assets/placeholders/project-placeholder.svg" alt="Whiteboard pen refill machine placeholder" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Course Project / Mechatronics</p>
-              <h3>Autonomous Whiteboard-Pen Refill Machine</h3>
-              <p>Main planner, system designer, electrical engineer, and fabrication/assembly contributor for an automated machine that removes marker tips and refills ink using stepper-driven mechanisms.</p>
-              <div class="project-tags"><span>Mechatronics</span><span>Sustainability</span><span>Fabrication</span><span>Electrical Integration</span></div>
-              <div class="project-links"><a href="https://www.linkedin.com/posts/vuducphat_mechanicalengineering-sustainability-mechatronics-activity-7419083358468517888-uny4" target="_blank" rel="noopener noreferrer">Public LinkedIn Post</a></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up delay-1">
-            <img src="assets/placeholders/project-placeholder.svg" alt="Gesture controlled environmental robot placeholder" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Course Project / Mobile Robotics</p>
-              <h3>Hand-Gesture-Controlled Robot for Environmental Surveying</h3>
-              <p>A three-wheel differential-drive robot controlled by wearable IMUs, with a head-tracked camera gimbal, ESP32/RF communication, and onboard temperature, humidity, and gas sensing.</p>
-              <div class="project-tags"><span>ESP32</span><span>Wearable Control</span><span>Gimbal</span><span>Environmental Sensing</span></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up">
-            <img src="assets/placeholders/project-placeholder.svg" alt="VTOL tricopter placeholder" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">Independent Project / UAV</p>
-              <h3>Mini Hawk VTOL Tilt-Rotor Tricopter</h3>
-              <p>An independent open-source learning build exploring VTOL configuration, tilt-rotor mechanisms, 3D-printed fabrication, flight testing, and iterative tuning.</p>
-              <div class="project-tags"><span>VTOL</span><span>Tricopter</span><span>ArduPilot</span><span>Rapid Prototyping</span></div>
-            </div>
-          </article>
-
-          <article class="project-card fade-up delay-1">
-            <img src="assets/placeholders/project-placeholder.svg" alt="Water quality monitoring project placeholder" class="project-image" />
-            <div class="project-content">
-              <p class="project-type">First-Year Project / Sensing</p>
-              <h3>Wireless Water-Quality Monitoring and Mapping System</h3>
-              <p>A sensing platform using pH, TDS, turbidity, and temperature measurements, with standards-based interpretation and Google Maps visualization for location-based monitoring.</p>
-              <div class="project-tags"><span>Water Quality</span><span>Wireless Sensing</span><span>Data Mapping</span><span>Google Maps API</span></div>
-            </div>
-          </article>
+        <div class="section-heading fade-up"><p class="section-label">Highlights</p><h2>Selected projects</h2></div>
+        <div class="highlight-list">
+          <a class="card highlight-project fade-up" href="projects/dual-lidar-uav.html"><img src="assets/Project 1 - drone/project-drone.jpg" alt="Dual-LiDAR UAV" /><h3>Dual-2D-LiDAR UAV for Indoor SLAM, 3D Reconstruction, and Precision Landing</h3></a>
+          <a class="card highlight-project fade-up delay-1" href="projects/teensy-quadcopter.html"><img src="assets/project 2 - IPS/ips.png" alt="Custom Teensy quadcopter" /><h3>Custom Quadcopter Using Teensy 4.1 and MPU6050</h3></a>
+          <a class="card highlight-project fade-up" href="projects/teleoperated-humanoid-hand.html"><img src="assets/Project 4 - Tendon Robotic arm/thumbnail.png" alt="Teleoperated humanoid robotic hand" /><h3>Teleoperated Humanoid Robotic Hand with Soft Filament Sensor</h3></a>
+          <a class="card highlight-project fade-up delay-1" href="projects/tool-interchange-arm.html"><img src="assets/projects/06-tool-interchange-arm/thumbnail.png" alt="Automatic tool-interchange system" /><h3>Automatic Tool-Interchange System for a Humanoid Robotic Arm</h3></a>
         </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <div class="container">
-        <div class="section-heading fade-up"><p class="section-label">Gallery</p><h2>Media by project</h2></div>
-        <div class="gallery-groups">
-          <article class="gallery-group card fade-up">
-            <img src="assets/highlight/First Mini Drone/20250322_120239.jpg" alt="First Mini Drone gallery cover" class="gallery-cover" />
-            <div class="gallery-content"><p class="gallery-tag">Highlight Folder</p><h3>First Mini Drone</h3><p>Early drone build photos and flight-day media collected in the dedicated highlight folder.</p><div class="gallery-links"><a href="assets/highlight/First Mini Drone/20250322_120239.jpg" target="_blank">Photo 1</a><a href="assets/highlight/First Mini Drone/20250322_120250.jpg" target="_blank">Photo 2</a><a href="assets/highlight/First Mini Drone/20250707_110653.jpg" target="_blank">Photo 3</a><a href="assets/highlight/First Mini Drone/20250707_110705.jpg" target="_blank">Photo 4</a><a href="assets/highlight/First Mini Drone/IPS_2025-08-21.15.32.31.8730.mp4" target="_blank">Video</a></div></div>
-          </article>
-          <article class="gallery-group card fade-up delay-1">
-            <img src="assets/Project 1 - drone/project-drone.jpg" alt="Project 1 gallery cover" class="gallery-cover" />
-            <div class="gallery-content"><p class="gallery-tag">Project 1</p><h3>Autonomous PX4 Drone</h3><p>Project visuals and demos for the PX4, 2D LiDAR, and 3D mapping workflow.</p><div class="gallery-links"><a href="assets/Project 1 - drone/project-drone.jpg" target="_blank">Thumbnail</a><a href="https://youtu.be/FXyLhvrWZbU?t=915" target="_blank" rel="noopener noreferrer">2D Demo</a><a href="https://youtu.be/_i1odhAnNYk" target="_blank" rel="noopener noreferrer">3D Mapping</a></div></div>
-          </article>
-          <article class="gallery-group card fade-up">
-            <img src="assets/project 2 - IPS/ips.png" alt="Project 2 gallery cover" class="gallery-cover" />
-            <div class="gallery-content"><p class="gallery-tag">Project 2</p><h3>Scratch-built UAV</h3><p>Build-stage media, build log PDF, and demo-day video from the IPS course project.</p><div class="gallery-links"><a href="assets/project 2 - IPS/ips.png" target="_blank">Thumbnail</a><a href="assets/project 2 - IPS/project-2-build-log.pdf" target="_blank">Build Log</a><a href="assets/project 2 - IPS/Demoday 1-video.mp4" target="_blank">Demo Video</a></div></div>
-          </article>
-          <article class="gallery-group card fade-up delay-1">
-            <img src="assets/Project 3 - Soft Robotic Glove/thumbnail.jpg" alt="Project 3 gallery cover" class="gallery-cover" />
-            <div class="gallery-content"><p class="gallery-tag">Project 3</p><h3>Soft Robotic Glove</h3><p>Current visual material for the rehabilitation glove research direction.</p><div class="gallery-links"><a href="assets/Project 3 - Soft Robotic Glove/thumbnail.jpg" target="_blank">Thumbnail</a></div></div>
-          </article>
-          <article class="gallery-group card fade-up">
-            <img src="assets/Project 4 - Tendon Robotic arm/thumbnail.png" alt="Project 4 gallery cover" class="gallery-cover" />
-            <div class="gallery-content"><p class="gallery-tag">Project 4</p><h3>Tendon Robotic Arm</h3><p>Research visuals for the tendon-driven robotic hand and teleoperation work.</p><div class="gallery-links"><a href="assets/Project 4 - Tendon Robotic arm/thumbnail.png" target="_blank">Thumbnail</a></div></div>
-          </article>
-        </div>
+        <div class="section-action"><a class="btn btn-primary" href="projects.html">View all projects</a></div>
       </div>
     </section>
 
     <section id="experience" class="section">
-      <div class="container">
-        <div class="section-heading fade-up"><p class="section-label">Experience</p><h2>Research and Engineering</h2></div>
-        <div class="experience-tracks">
-          <div class="experience-track fade-up">
-            <div class="experience-track-header"><h3>Academic</h3></div>
-            <div class="timeline">
-              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content card"><p class="timeline-stamp">[03/2025 - Present]</p><h3>Research Assistant at VinUni Biorobotics Lab</h3><p class="timeline-meta">Soft robotics and human-centered robotic systems</p><p>Developing research prototypes involving soft-muscle actuation, tendon mechanisms, soft sensing, teleoperation, experimental validation, and technical writing.</p></div></div>
-              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content card"><p class="timeline-stamp">[10/2023 - 02/2025]</p><h3>Undergraduate Researcher at VinUni Biorobotics Lab</h3><p class="timeline-meta">Prototyping, fabrication, and experimentation</p><p>Contributed to rehabilitation robotics, soft mechanisms, actuator fabrication, experimental setup development, and technical communication.</p></div></div>
-            </div>
-          </div>
-          <div class="experience-track fade-up delay-1">
-            <div class="experience-track-header"><h3>Industry</h3></div>
-            <div class="timeline">
-              <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content card"><p class="timeline-stamp">[06/2025 - 10/2025]</p><h3>UAV Engineering Intern at Phenikaa-X</h3><p class="timeline-meta">UAV integration, PX4 offboard control, and flight testing</p><p>Designed a battery-holder retrofit for a Holybro X500 platform, implemented PX4 offboard velocity control for GPS-denied flight, supported AprilTag-based localization and camera deployment, and participated in real-world testing as a test pilot.</p></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container"><div class="section-heading fade-up"><p class="section-label">Experience</p><h2>Research and Engineering</h2></div><div class="experience-tracks"><div class="experience-track fade-up"><div class="experience-track-header"><h3>Academic</h3></div><div class="timeline"><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content card"><p class="timeline-stamp">[03/2025 - Present]</p><h3>Research Assistant at VinUni Biorobotics Lab</h3><p class="timeline-meta">Soft robotics and human-centered robotic systems</p><p>Developing research prototypes involving soft-muscle actuation, tendon mechanisms, soft sensing, teleoperation, experimental validation, and technical writing.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content card"><p class="timeline-stamp">[10/2023 - 02/2025]</p><h3>Undergraduate Researcher at VinUni Biorobotics Lab</h3><p class="timeline-meta">Prototyping, fabrication, and experimentation</p><p>Contributed to rehabilitation robotics, soft mechanisms, actuator fabrication, experimental setup development, and technical communication.</p></div></div></div></div><div class="experience-track fade-up delay-1"><div class="experience-track-header"><h3>Industry</h3></div><div class="timeline"><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content card"><p class="timeline-stamp">[06/2025 - 10/2025]</p><h3>UAV Engineering Intern at Phenikaa-X</h3><p class="timeline-meta">UAV integration, PX4 offboard control, and flight testing</p><p>Designed a battery-holder retrofit for a Holybro X500 platform, implemented PX4 offboard velocity control for GPS-denied flight, supported AprilTag-based localization and camera deployment, and participated in real-world testing as a test pilot.</p></div></div></div></div></div></div>
     </section>
 
-    <section id="research" class="section">
-      <div class="container">
-        <div class="section-heading fade-up"><p class="section-label">Research</p><h2>Manuscripts and ongoing work</h2></div>
-        <div class="research-grid">
-          <div class="card fade-up">
-            <h3>Selected Research Projects</h3>
-            <ul class="research-list">
-              <li><strong>Teleoperated Humanoid Robotic Hand with Soft Filament Sensor</strong> — First author; submitted to the Journal of Intelligent & Robotic Systems.</li>
-              <li><strong>Hybrid Soft Muscle–Tendon Rehabilitation Glove</strong> — Co-first author; manuscript submitted.</li>
-              <li><strong>Double-Attack Mechanical Thrombectomy</strong> — First author; submitted to ICARCV 2026.</li>
-            </ul>
-          </div>
-          <div class="card fade-up delay-1">
-            <h3>Public release status</h3>
-            <p>Some research media, figures, and manuscript files are intentionally not public yet. Approved photos, videos, posters, and paper links will be added after publication or permission.</p>
-            <a class="btn btn-secondary small-btn" href="assets/General/Trung_CV_Eng.pdf" target="_blank">View Resume / CV</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-contact">
-      <div class="container">
-        <div class="section-heading fade-up"><p class="section-label">Contact</p><h2>Let’s connect</h2></div>
-        <div class="contact-card card fade-up">
-          <p>I am open to research collaboration, graduate-study opportunities, and conversations about robotics, autonomous systems, soft robotics, and mechatronic design.</p>
-          <div class="contact-links">
-            <a href="mailto:23trung.lh@vinuni.edu.vn">23trung.lh@vinuni.edu.vn</a>
-            <a href="https://github.com/Vaderplayz" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="assets/General/Trung_CV_Eng.pdf" target="_blank">CV</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="contact" class="section section-contact"><div class="container"><div class="section-heading fade-up"><p class="section-label">Contact</p><h2>Let’s connect</h2></div><div class="contact-card card fade-up"><p>I am open to research collaboration, graduate-study opportunities, and conversations about robotics, autonomous systems, soft robotics, and mechatronic design.</p><div class="contact-links"><a href="mailto:23trung.lh@vinuni.edu.vn">23trung.lh@vinuni.edu.vn</a><a href="https://github.com/Vaderplayz" target="_blank" rel="noopener noreferrer">GitHub</a><a href="assets/General/Trung_CV_Eng.pdf" target="_blank">CV</a></div></div></div></section>
   </main>
 
   <footer class="site-footer"><div class="container footer-content"><p>© 2026 Le Hai Trung. Built with HTML, CSS, and GitHub Pages.</p></div></footer>
