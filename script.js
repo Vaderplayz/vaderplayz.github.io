@@ -96,12 +96,12 @@ if (thrombectomyCard) {
   }
 }
 
-// Use a current prototype image for the tool-interchange project thumbnail.
+// Use the uploaded thumbnail for the tool-interchange project.
 const toolInterchangeCard = document.querySelector("#projects .project-card:nth-child(6)");
 if (toolInterchangeCard) {
   const thumbnail = toolInterchangeCard.querySelector(".project-image");
   if (thumbnail) {
-    thumbnail.src = "assets/projects/06-tool-interchange-arm/666055073_1455537489380633_8237998933895593412_n.jpg";
+    thumbnail.src = "assets/projects/06-tool-interchange-arm/thumbnail.png";
     thumbnail.alt = "Automatic tool-interchange system for a humanoid robotic arm";
   }
 
