@@ -75,15 +75,20 @@ if (contactSection && !document.getElementById("certifications")) {
   const style = document.createElement("style");
   style.textContent = `
     .certifications-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-    .certification-card{display:flex;flex-direction:column;gap:14px;padding:26px}
+    .certification-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;align-items:center;padding:26px}
+    .certification-logo-wrap{display:flex;align-items:center;justify-content:center;min-height:170px;padding:14px;border-radius:14px;background:#fff}
+    .certification-logo{display:block;width:100%;height:145px;object-fit:contain}
+    .certification-body{display:flex;flex-direction:column;gap:14px;min-width:0}
     .certification-level{color:var(--accent);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
     .certification-card h3{color:var(--heading);font-size:1.35rem;line-height:1.3}
     .certification-meta{color:var(--muted);line-height:1.7}
-    .certification-id{font-family:monospace;color:var(--text);font-size:.92rem}
+    .certification-id{font-family:monospace;color:var(--text);font-size:.92rem;overflow-wrap:anywhere}
     .certification-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
     .certification-actions a{padding:9px 13px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.18);font-weight:700}
     .certification-card.primary{border-color:rgba(56,189,248,.35);box-shadow:0 14px 40px rgba(0,0,0,.3)}
-    @media(max-width:760px){.certifications-grid{grid-template-columns:1fr}}
+    @media(max-width:950px){.certification-card{grid-template-columns:120px minmax(0,1fr)}.certification-logo{height:120px}.certification-logo-wrap{min-height:145px}}
+    @media(max-width:760px){.certifications-grid{grid-template-columns:1fr}.certification-card{grid-template-columns:110px minmax(0,1fr)}}
+    @media(max-width:520px){.certification-card{grid-template-columns:1fr}.certification-logo-wrap{min-height:150px}.certification-logo{height:130px}}
   `;
   document.head.appendChild(style);
 
@@ -98,21 +103,33 @@ if (contactSection && !document.getElementById("certifications")) {
       </div>
       <div class="certifications-grid">
         <article class="card certification-card primary fade-up">
-          <p class="certification-level">Professional</p>
-          <h3>SOLIDWORKS Design Professional (CSWP)</h3>
-          <p class="certification-meta">Dassault Systèmes<br>Issued July 29, 2026</p>
-          <p class="certification-id">Credential ID: C-CAXWBMJPDY</p>
-          <div class="certification-actions">
-            <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-CAXWBMJPDY" target="_blank" rel="noopener noreferrer">Verify credential</a>
+          <div class="certification-logo-wrap">
+            <img class="certification-logo" src="assets/certifications/SOLIDWORKS DESIGN - PROFESSIONAL.png" alt="SOLIDWORKS Design Professional certification badge">
+          </div>
+          <div class="certification-body">
+            <p class="certification-level">Professional</p>
+            <h3>SOLIDWORKS Design Professional (CSWP)</h3>
+            <p class="certification-meta">Dassault Systèmes<br>Issued July 29, 2026</p>
+            <p class="certification-id">Credential ID: C-CAXWBMJPDY</p>
+            <div class="certification-actions">
+              <a href="assets/certifications/Certificate C-CAXWBMJPDY.pdf" target="_blank" rel="noopener noreferrer">View certificate</a>
+              <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-CAXWBMJPDY" target="_blank" rel="noopener noreferrer">Verify credential</a>
+            </div>
           </div>
         </article>
         <article class="card certification-card fade-up delay-1">
-          <p class="certification-level">Associate</p>
-          <h3>SOLIDWORKS Design Associate (CSWA)</h3>
-          <p class="certification-meta">Dassault Systèmes<br>Issued May 16, 2026</p>
-          <p class="certification-id">Credential ID: C-N3ZBHCXTP7</p>
-          <div class="certification-actions">
-            <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-N3ZBHCXTP7" target="_blank" rel="noopener noreferrer">Verify credential</a>
+          <div class="certification-logo-wrap">
+            <img class="certification-logo" src="assets/certifications/SOLIDWORKS DESIGN - ASSOCIATE.png" alt="SOLIDWORKS Design Associate certification badge">
+          </div>
+          <div class="certification-body">
+            <p class="certification-level">Associate</p>
+            <h3>SOLIDWORKS Design Associate (CSWA)</h3>
+            <p class="certification-meta">Dassault Systèmes<br>Issued May 16, 2026</p>
+            <p class="certification-id">Credential ID: C-N3ZBHCXTP7</p>
+            <div class="certification-actions">
+              <a href="assets/certifications/Certificate C-N3ZBHCXTP7.pdf" target="_blank" rel="noopener noreferrer">View certificate</a>
+              <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-N3ZBHCXTP7" target="_blank" rel="noopener noreferrer">Verify credential</a>
+            </div>
           </div>
         </article>
       </div>
