@@ -34,6 +34,11 @@ const projectDetails = [
     card: document.querySelector("#projects .project-card:nth-child(3)"),
     url: "projects/soft-robotic-glove.html",
     label: "Open the hybrid soft muscle tendon rehabilitation glove project page"
+  },
+  {
+    card: document.querySelector("#projects .project-card:nth-child(4)"),
+    url: "projects/teleoperated-humanoid-hand.html",
+    label: "Open the teleoperated humanoid robotic hand project page"
   }
 ];
 
@@ -71,17 +76,27 @@ projectDetails.forEach(({ card, url, label }) => {
   });
 });
 
-// Mark Project 3 as ongoing research using the current approved media.
-const softGloveCard = document.querySelector("#projects .project-card:nth-child(3)");
-if (softGloveCard) {
-  const description = softGloveCard.querySelector(".project-content > p:not(.project-type)");
-  if (description) {
-    description.textContent = "Ongoing co-first-author research on a rehabilitation glove combining compliant soft muscles with tendon-driven assistance. The current page uses only approved public media while the research and associated paper remain in development.";
+// Mark Projects 3 and 4 as ongoing research using only approved public media.
+const ongoingResearchCards = [
+  {
+    card: document.querySelector("#projects .project-card:nth-child(3)"),
+    description: "Ongoing co-first-author research on a rehabilitation glove combining compliant soft muscles with tendon-driven assistance. The current page uses only approved public media while the research and associated paper remain in development."
+  },
+  {
+    card: document.querySelector("#projects .project-card:nth-child(4)"),
+    description: "Ongoing first-author research integrating a tendon-driven humanoid hand, soft filament sensors, soft-muscle actuation, and MATLAB/Simulink control for real-time teleoperation. Only currently approved public media are shown while the research and associated paper remain in development."
   }
+];
 
-  const projectType = softGloveCard.querySelector(".project-type");
+ongoingResearchCards.forEach(({ card, description }) => {
+  if (!card) return;
+
+  const descriptionElement = card.querySelector(".project-content > p:not(.project-type)");
+  if (descriptionElement) descriptionElement.textContent = description;
+
+  const projectType = card.querySelector(".project-type");
   if (projectType) projectType.textContent = "Ongoing Research / Soft Robotics";
-}
+});
 
 // ===============================
 // Certifications section
