@@ -44,6 +44,11 @@ const projectDetails = [
     card: document.querySelector("#projects .project-card:nth-child(5)"),
     url: "projects/double-attack-thrombectomy.html",
     label: "Open the double-attack mechanical thrombectomy project page"
+  },
+  {
+    card: document.querySelector("#projects .project-card:nth-child(6)"),
+    url: "projects/tool-interchange-arm.html",
+    label: "Open the automatic tool-interchange robotic arm project page"
   }
 ];
 
@@ -88,6 +93,21 @@ if (thrombectomyCard) {
   if (thumbnail) {
     thumbnail.src = "assets/projects/05-double-attack-thrombectomy/0.5 fig.png";
     thumbnail.alt = "Double-attack mechanical thrombectomy concept and prototype";
+  }
+}
+
+// Use a current prototype image for the tool-interchange project thumbnail.
+const toolInterchangeCard = document.querySelector("#projects .project-card:nth-child(6)");
+if (toolInterchangeCard) {
+  const thumbnail = toolInterchangeCard.querySelector(".project-image");
+  if (thumbnail) {
+    thumbnail.src = "assets/projects/06-tool-interchange-arm/666055073_1455537489380633_8237998933895593412_n.jpg";
+    thumbnail.alt = "Automatic tool-interchange system for a humanoid robotic arm";
+  }
+
+  const description = toolInterchangeCard.querySelector(".project-content > p:not(.project-type)");
+  if (description) {
+    description.textContent = "A group-led robotic tool-changing system inspired by CNC workflows, using electromagnetic coupling, guided alignment, servo sequencing, and integrated electrical contacts for autonomous end-effector exchange.";
   }
 }
 
