@@ -39,6 +39,11 @@ const projectDetails = [
     card: document.querySelector("#projects .project-card:nth-child(4)"),
     url: "projects/teleoperated-humanoid-hand.html",
     label: "Open the teleoperated humanoid robotic hand project page"
+  },
+  {
+    card: document.querySelector("#projects .project-card:nth-child(5)"),
+    url: "projects/double-attack-thrombectomy.html",
+    label: "Open the double-attack mechanical thrombectomy project page"
   }
 ];
 
@@ -76,7 +81,17 @@ projectDetails.forEach(({ card, url, label }) => {
   });
 });
 
-// Mark Projects 3 and 4 as ongoing research using only approved public media.
+// Use the approved thrombectomy figure as the current project thumbnail.
+const thrombectomyCard = document.querySelector("#projects .project-card:nth-child(5)");
+if (thrombectomyCard) {
+  const thumbnail = thrombectomyCard.querySelector(".project-image");
+  if (thumbnail) {
+    thumbnail.src = "assets/projects/05-double-attack-thrombectomy/0.5 fig.png";
+    thumbnail.alt = "Double-attack mechanical thrombectomy concept and prototype";
+  }
+}
+
+// Mark Projects 3, 4, and 5 as ongoing research using only approved public media.
 const ongoingResearchCards = [
   {
     card: document.querySelector("#projects .project-card:nth-child(3)"),
@@ -86,6 +101,11 @@ const ongoingResearchCards = [
   {
     card: document.querySelector("#projects .project-card:nth-child(4)"),
     description: "Ongoing first-author research integrating a tendon-driven humanoid hand, soft filament sensors, soft-muscle actuation, and MATLAB/Simulink control for real-time teleoperation. Only currently approved public media are shown.",
+    status: "Research status: Ongoing research; manuscript under review."
+  },
+  {
+    card: document.querySelector("#projects .project-card:nth-child(5)"),
+    description: "Ongoing first-author research on a proof-of-concept thrombectomy device combining rotational clot interaction with soft-actuator-driven axial reciprocation. Preliminary benchtop testing showed approximately 7% localized suction improvement.",
     status: "Research status: Ongoing research; manuscript under review."
   }
 ];
