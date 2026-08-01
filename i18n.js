@@ -3,258 +3,119 @@
   const DEFAULT_LANGUAGE = "en";
 
   const vi = {
-    "About": "Giới thiệu",
-    "Projects": "Dự án",
-    "Experience": "Kinh nghiệm",
-    "Research": "Nghiên cứu",
-    "Certifications": "Chứng chỉ",
-    "Contact": "Liên hệ",
-    "View Projects": "Xem dự án",
-    "View all projects": "Xem tất cả dự án",
-    "Download Resume": "Tải CV",
-    "View Resume / CV": "Xem CV",
-    "CV": "CV",
-    "GitHub": "GitHub",
-    "LinkedIn profile": "Hồ sơ LinkedIn",
-    "LinkedIn": "LinkedIn",
-    "About me": "Về tôi",
-    "Final-year Mechanical Engineering undergraduate": "Sinh viên năm cuối ngành Kỹ thuật Cơ khí",
-    "VinUniversity 2023–2027": "VinUniversity 2023–2027",
-    "VinUni Biorobotics Lab": "Phòng thí nghiệm Biorobotics VinUni",
-    "Technical profile": "Hồ sơ chuyên môn",
-    "Field of Interest": "Lĩnh vực quan tâm",
-    "Skills": "Kỹ năng",
-    "Highlights": "Điểm nổi bật",
-    "Project": "Dự án",
-    "Internship": "Thực tập",
-    "Achievements": "Thành tích",
-    "Research, admission, and recognition": "Nghiên cứu, tuyển sinh và ghi nhận",
-    "Research and Engineering": "Nghiên cứu và Kỹ thuật",
-    "Academic": "Học thuật",
-    "Industry": "Công nghiệp",
-    "Let’s connect": "Kết nối với tôi",
-    "Let's connect": "Kết nối với tôi",
-    "Currently seeking graduate study and engineering opportunities in robotics, autonomous systems, and mechatronic design.": "Hiện đang tìm kiếm cơ hội học sau đại học và vị trí kỹ thuật trong lĩnh vực robot, hệ thống tự hành và thiết kế cơ điện tử.",
-    "I am a final-year Mechanical Engineering undergraduate focused on robotics and mechatronics. I build systems that combine sensing, actuation, control, and real-world deployment across soft robotics, humanoid-hand teleoperation, autonomous UAVs, and LiDAR-based mapping.": "Tôi là sinh viên năm cuối ngành Kỹ thuật Cơ khí, tập trung vào robot và cơ điện tử. Tôi phát triển các hệ thống kết hợp cảm biến, cơ cấu chấp hành, điều khiển và triển khai thực tế trong robot mềm, điều khiển từ xa bàn tay robot hình người, UAV tự hành và lập bản đồ bằng LiDAR.",
-    "I am especially interested in robotics and mechatronics, soft robotics, UAV autonomy, robot perception, mapping and navigation, and control systems. My work is driven by building practical robotic systems that connect sensing, actuation, control, and real-world deployment.": "Tôi đặc biệt quan tâm đến robot và cơ điện tử, robot mềm, UAV tự hành, nhận thức robot, lập bản đồ và dẫn đường, cùng các hệ thống điều khiển. Công việc của tôi hướng đến việc xây dựng các hệ thống robot thực tiễn kết nối cảm biến, cơ cấu chấp hành, điều khiển và triển khai trong môi trường thật.",
-    "I am open to research collaboration, graduate-study opportunities, and conversations about robotics, autonomous systems, soft robotics, and mechatronic design.": "Tôi sẵn sàng trao đổi về hợp tác nghiên cứu, cơ hội học sau đại học, robot, hệ thống tự hành, robot mềm và thiết kế cơ điện tử.",
-    "Developing research prototypes involving soft-muscle actuation, tendon mechanisms, soft sensing, teleoperation, experimental validation, and technical writing.": "Phát triển các nguyên mẫu nghiên cứu liên quan đến cơ mềm, cơ cấu gân, cảm biến mềm, điều khiển từ xa, đánh giá thực nghiệm và viết bài kỹ thuật.",
-    "Contributed to rehabilitation robotics, soft mechanisms, actuator fabrication, experimental setup development, and technical communication.": "Tham gia phát triển robot phục hồi chức năng, cơ cấu mềm, chế tạo cơ cấu chấp hành, xây dựng hệ thí nghiệm và truyền đạt kỹ thuật.",
-    "UAV integration, PX4 offboard control, and flight testing": "Tích hợp UAV, điều khiển PX4 offboard và thử nghiệm bay",
-    "Soft robotics and human-centered robotic systems": "Robot mềm và hệ thống robot lấy con người làm trung tâm",
-    "Prototyping, fabrication, and experimentation": "Tạo mẫu, chế tạo và thực nghiệm",
-    "Research Assistant at VinUni Biorobotics Lab": "Trợ lý Nghiên cứu tại Phòng thí nghiệm Biorobotics VinUni",
-    "Undergraduate Researcher at VinUni Biorobotics Lab": "Nghiên cứu viên Đại học tại Phòng thí nghiệm Biorobotics VinUni",
-    "UAV Engineering Intern at Phenikaa-X": "Thực tập sinh Kỹ thuật UAV tại Phenikaa-X",
-    "Designed a battery-holder retrofit for a Holybro X500 platform, implemented PX4 offboard velocity control for GPS-denied flight, supported AprilTag-based localization and camera deployment, and participated in real-world testing as a test pilot.": "Thiết kế bộ gá pin cải tiến cho nền tảng Holybro X500, triển khai điều khiển vận tốc PX4 offboard cho bay không GPS, hỗ trợ định vị bằng AprilTag và tích hợp camera, đồng thời tham gia thử nghiệm thực tế với vai trò phi công thử nghiệm.",
-    "View internship details →": "Xem chi tiết kỳ thực tập →",
-    "Journal manuscript · Under review": "Bài báo tạp chí · Đang phản biện",
-    "Journal manuscript · Submitted 4 July 2026": "Bài báo tạp chí · Nộp ngày 4 tháng 7 năm 2026",
-    "Conference paper · ICARCV 2026": "Bài báo hội nghị · ICARCV 2026",
-    "Academic recognition": "Ghi nhận học thuật",
-    "Graduate admission": "Trúng tuyển cao học",
-    "Submitted to Sensors and Actuators A: Physical.": "Đã nộp tới tạp chí Sensors and Actuators A: Physical.",
-    "Submitted to the Journal of Intelligent & Robotic Systems.": "Đã nộp tới Journal of Intelligent & Robotic Systems.",
-    "Submitted to the 2026 19th International Conference on Control, Automation, Robotics and Vision.": "Đã nộp tới Hội nghị Quốc tế lần thứ 19 về Điều khiển, Tự động hóa, Robot và Thị giác năm 2026.",
-    "Dean’s List · Spring 2025": "Danh sách Dean · Học kỳ Xuân 2025",
-    "Recognized for academic performance at VinUniversity.": "Được VinUniversity ghi nhận thành tích học tập.",
-    "University of Pennsylvania · Robotics": "Đại học Pennsylvania · Robotics",
-    "Admitted to the University of Pennsylvania Master’s program in Robotics.": "Được nhận vào chương trình Thạc sĩ Robotics của Đại học Pennsylvania.",
-    "Professional credentials": "Chứng chỉ chuyên môn",
-    "Professional": "Chuyên nghiệp",
-    "Associate": "Cơ bản",
-    "Issued July 29, 2026": "Cấp ngày 29 tháng 7 năm 2026",
-    "Issued May 16, 2026": "Cấp ngày 16 tháng 5 năm 2026",
-    "Credential ID:": "Mã chứng chỉ:",
-    "View certificate": "Xem chứng chỉ",
-    "Verify credential": "Xác minh chứng chỉ",
-    "Robotics and engineering projects": "Các dự án robot và kỹ thuật",
-    "Detailed project pages, current media, research status, and technical documentation. Gallery-only content is hidden for now to keep the portfolio focused.": "Các trang dự án chi tiết, hình ảnh và video hiện có, trạng thái nghiên cứu và tài liệu kỹ thuật. Nội dung chỉ mang tính thư viện ảnh tạm thời được ẩn để giữ trọng tâm cho hồ sơ.",
-    "UAV / Robotics": "UAV / Robot",
-    "Independent Project / UAV": "Dự án cá nhân / UAV",
-    "Research / Soft Robotics": "Nghiên cứu / Robot mềm",
-    "Research / Humanoid Robotics": "Nghiên cứu / Robot hình người",
-    "Ongoing Research / Soft Robotics": "Nghiên cứu đang thực hiện / Robot mềm",
-    "Intelligent Physical System": "Hệ thống Vật lý Thông minh",
-    "Robotics and Automation": "Robot và Tự động hóa",
-    "Mechanical Synthesis": "Tổng hợp Cơ khí",
-    "Mechatronics": "Cơ điện tử",
-    "Introduction to CECS": "Nhập môn CECS",
-    "Custom Quadcopter Using Teensy 4.1 and MPU6050": "Quadcopter tùy chỉnh sử dụng Teensy 4.1 và MPU6050",
-    "Hybrid Soft Muscle–Tendon Rehabilitation Glove": "Găng tay phục hồi chức năng kết hợp cơ mềm và gân",
-    "Teleoperated Humanoid Robotic Hand with Soft Filament Sensor": "Bàn tay robot hình người điều khiển từ xa sử dụng cảm biến sợi mềm",
-    "Double-Attack Mechanical Thrombectomy": "Thiết bị lấy huyết khối cơ học tác động kép",
-    "Automatic Tool-Interchange System for a Humanoid Robotic Arm": "Hệ thống tự động thay đổi dụng cụ cho cánh tay robot hình người",
-    "Automated Whiteboard-Pen Refill Machine": "Máy tự động nạp lại mực bút bảng trắng",
-    "Hand-Gesture-Controlled Robot for Environmental Surveying": "Robot khảo sát môi trường điều khiển bằng cử chỉ tay",
-    "MiniHawk VTOL Tilt-Rotor Tricopter": "MiniHawk VTOL ba cánh quạt nghiêng",
-    "Wireless Water-Quality Monitoring and Mapping System": "Hệ thống giám sát và lập bản đồ chất lượng nước không dây",
-    "A custom PX4 UAV combining horizontal and vertical 2D LiDAR sensing, indoor SLAM, sequential 3D reconstruction, Raspberry Pi processing, and AprilTag precision landing.": "Một UAV PX4 tùy chỉnh kết hợp LiDAR 2D theo phương ngang và dọc, SLAM trong nhà, tái tạo 3D tuần tự, xử lý bằng Raspberry Pi và hạ cánh chính xác với AprilTag.",
-    "A scratch-built quadcopter developed through mechanical redesign, constrained testing, vibration troubleshooting, ANSYS validation, and PID tuning.": "Một quadcopter được phát triển từ đầu thông qua thiết kế lại cơ khí, thử nghiệm có ràng buộc, xử lý rung, xác nhận bằng ANSYS và tinh chỉnh PID.",
-    "Co-first-author research on a wearable rehabilitation glove combining compliant soft muscles with tendon-driven assistance.": "Nghiên cứu đồng tác giả thứ nhất về găng tay phục hồi chức năng đeo được, kết hợp cơ mềm có tính tuân thủ với hỗ trợ truyền động bằng gân.",
-    "First-author work integrating a tendon-driven hand, soft sensors, soft-muscle actuators, and MATLAB/Simulink control.": "Nghiên cứu tác giả thứ nhất tích hợp bàn tay truyền động bằng gân, cảm biến mềm, cơ cấu chấp hành cơ mềm và điều khiển MATLAB/Simulink.",
-    "First-author proof-of-concept device combining rotational clot interaction with soft-actuator-driven axial reciprocation.": "Thiết bị kiểm chứng ý tưởng do tác giả thứ nhất thực hiện, kết hợp tương tác xoay với huyết khối và chuyển động tịnh tiến dọc trục nhờ cơ cấu chấp hành mềm.",
-    "A group-led robotic tool-changing system using guided alignment, electromagnetic coupling, servo sequencing, and integrated electrical contacts.": "Hệ thống thay dụng cụ robot do nhóm phát triển, sử dụng căn chỉnh dẫn hướng, ghép nối điện từ, trình tự servo và tiếp điểm điện tích hợp.",
-    "An automated mechanism for opening, refilling, and restoring reusable whiteboard markers using coordinated electromechanical subsystems.": "Một cơ cấu tự động mở, nạp mực và hoàn thiện lại bút bảng trắng tái sử dụng bằng các phân hệ cơ điện phối hợp.",
-    "A differential-drive robot controlled by wearable IMUs, with a head-tracked camera gimbal and onboard environmental sensing.": "Robot dẫn động vi sai được điều khiển bằng IMU đeo tay, tích hợp gimbal camera theo dõi chuyển động đầu và cảm biến môi trường trên xe.",
-    "A hands-on build based on Stephen Carlson’s open-source MiniHawk VTOL, covering 3D-printed fabrication, tilt-nacelle alignment, aircraft integration, configuration, and flight testing.": "Một dự án chế tạo thực tế dựa trên thiết kế MiniHawk VTOL mã nguồn mở của Stephen Carlson, bao gồm in 3D, căn chỉnh cụm động cơ nghiêng, tích hợp máy bay, cấu hình và thử nghiệm bay.",
-    "A connected sensing platform for pH, TDS, turbidity, and temperature measurements with Wi-Fi data logging, live graphs, and location-based water-quality mapping.": "Một nền tảng cảm biến kết nối đo pH, TDS, độ đục và nhiệt độ, hỗ trợ ghi dữ liệu qua Wi-Fi, biểu đồ trực tiếp và lập bản đồ chất lượng nước theo vị trí.",
-    "Manuscripts and ongoing work": "Bài báo và nghiên cứu đang thực hiện",
-    "Current publication status and public-release notes for ongoing soft-robotics and robotic-system research.": "Trạng thái công bố hiện tại và ghi chú phát hành công khai cho các nghiên cứu robot mềm và hệ thống robot đang thực hiện.",
-    "Selected Research Projects": "Các dự án nghiên cứu tiêu biểu",
-    "Public release status": "Trạng thái công bố công khai",
-    "Some research media, figures, and manuscript files are intentionally not public yet. Approved photos, videos, posters, and paper links will be added after publication or permission.": "Một số hình ảnh, hình minh họa và bản thảo nghiên cứu hiện chưa được công khai. Ảnh, video, poster và liên kết bài báo được phê duyệt sẽ được bổ sung sau khi công bố hoặc có sự cho phép.",
-    "First author; manuscript under review.": "Tác giả thứ nhất; bản thảo đang được phản biện.",
-    "Co-first author; manuscript under review.": "Đồng tác giả thứ nhất; bản thảo đang được phản biện.",
-    "First author; ongoing research and manuscript under review.": "Tác giả thứ nhất; nghiên cứu đang tiếp tục và bản thảo đang được phản biện.",
-    "Overview": "Tổng quan",
-    "System Overview": "Tổng quan hệ thống",
-    "Project Overview": "Tổng quan dự án",
-    "Design and Development": "Thiết kế và phát triển",
-    "System Architecture": "Kiến trúc hệ thống",
-    "Mechanical Design": "Thiết kế cơ khí",
-    "Electronics and Control": "Điện tử và điều khiển",
-    "Experimental Setup": "Thiết lập thí nghiệm",
-    "Results": "Kết quả",
-    "Testing and Results": "Thử nghiệm và kết quả",
-    "Simulation": "Mô phỏng",
-    "Real-World Deployment": "Triển khai thực tế",
-    "Development Process": "Quá trình phát triển",
-    "Hardware Development": "Phát triển phần cứng",
-    "Software and Control": "Phần mềm và điều khiển",
-    "Flight Testing": "Thử nghiệm bay",
-    "Demonstration Videos": "Video trình diễn",
-    "Videos": "Video",
-    "Gallery": "Thư viện",
-    "Documents": "Tài liệu",
-    "Project Documents": "Tài liệu dự án",
-    "Technical Details": "Chi tiết kỹ thuật",
-    "Key Features": "Đặc điểm chính",
-    "My Contribution and Personal Note": "Đóng góp cá nhân và ghi chú",
-    "This section will be completed with my specific role, technical decisions, lessons learned, and the parts of the system I personally designed, implemented, or tested.": "Phần này sẽ được hoàn thiện với vai trò cụ thể, các quyết định kỹ thuật, bài học kinh nghiệm và những phần hệ thống mà tôi trực tiếp thiết kế, triển khai hoặc thử nghiệm.",
-    "← Back to projects": "← Quay lại danh sách dự án",
-    "Back to projects": "Quay lại danh sách dự án",
-    "Next project:": "Dự án tiếp theo:",
-    "Original Project": "Dự án gốc",
-    "Original GitHub Repository": "Kho GitHub gốc",
-    "Hackaday Project Page": "Trang dự án Hackaday",
-    "Source and Attribution": "Nguồn và ghi nhận",
-    "Built with HTML, CSS, and GitHub Pages.": "Được xây dựng bằng HTML, CSS và GitHub Pages.",
-    "© 2026 Le Hai Trung. Built with HTML, CSS, and GitHub Pages.": "© 2026 Le Hai Trung. Được xây dựng bằng HTML, CSS và GitHub Pages."
+    "About":"Giới thiệu","Projects":"Dự án","Experience":"Kinh nghiệm","Research":"Nghiên cứu","Certifications":"Chứng chỉ","Contact":"Liên hệ","Gallery":"Thư viện",
+    "View Projects":"Xem dự án","View all projects":"Xem tất cả dự án","Download Resume":"Tải CV","View Resume / CV":"Xem CV","CV":"CV","GitHub":"GitHub","GitHub Repository":"Kho GitHub","Build Log":"Nhật ký chế tạo","LinkedIn profile":"Hồ sơ LinkedIn","LinkedIn":"LinkedIn",
+    "About me":"Về tôi","Final-year Mechanical Engineering undergraduate":"Sinh viên năm cuối ngành Kỹ thuật Cơ khí","VinUni Biorobotics Lab":"Phòng thí nghiệm Biorobotics VinUni","Technical profile":"Hồ sơ chuyên môn","Field of Interest":"Lĩnh vực quan tâm","Skills":"Kỹ năng","Highlights":"Điểm nổi bật","Project":"Dự án","Internship":"Thực tập","Achievements":"Thành tích","Research, admission, and recognition":"Nghiên cứu, tuyển sinh và ghi nhận","Research and Engineering":"Nghiên cứu và Kỹ thuật","Academic":"Học thuật","Industry":"Công nghiệp","Let’s connect":"Kết nối với tôi","Let's connect":"Kết nối với tôi",
+    "Currently seeking graduate study and engineering opportunities in robotics, autonomous systems, and mechatronic design.":"Hiện đang tìm kiếm cơ hội học sau đại học và vị trí kỹ thuật trong robot, hệ thống tự hành và thiết kế cơ điện tử.",
+    "I am a final-year Mechanical Engineering undergraduate focused on robotics and mechatronics. I build systems that combine sensing, actuation, control, and real-world deployment across soft robotics, humanoid-hand teleoperation, autonomous UAVs, and LiDAR-based mapping.":"Tôi là sinh viên năm cuối ngành Kỹ thuật Cơ khí, tập trung vào robot và cơ điện tử. Tôi phát triển các hệ thống kết hợp cảm biến, cơ cấu chấp hành, điều khiển và triển khai thực tế trong robot mềm, điều khiển từ xa bàn tay robot hình người, UAV tự hành và lập bản đồ bằng LiDAR.",
+    "I am especially interested in robotics and mechatronics, soft robotics, UAV autonomy, robot perception, mapping and navigation, and control systems. My work is driven by building practical robotic systems that connect sensing, actuation, control, and real-world deployment.":"Tôi đặc biệt quan tâm đến robot và cơ điện tử, robot mềm, UAV tự hành, nhận thức robot, lập bản đồ và dẫn đường, cùng các hệ thống điều khiển. Công việc của tôi hướng đến việc xây dựng các hệ thống robot thực tiễn kết nối cảm biến, cơ cấu chấp hành, điều khiển và triển khai trong môi trường thật.",
+    "I am open to research collaboration, graduate-study opportunities, and conversations about robotics, autonomous systems, soft robotics, and mechatronic design.":"Tôi sẵn sàng trao đổi về hợp tác nghiên cứu, cơ hội học sau đại học, robot, hệ thống tự hành, robot mềm và thiết kế cơ điện tử.",
+    "Developing research prototypes involving soft-muscle actuation, tendon mechanisms, soft sensing, teleoperation, experimental validation, and technical writing.":"Phát triển các nguyên mẫu nghiên cứu liên quan đến cơ mềm, cơ cấu gân, cảm biến mềm, điều khiển từ xa, đánh giá thực nghiệm và viết bài kỹ thuật.",
+    "Contributed to rehabilitation robotics, soft mechanisms, actuator fabrication, experimental setup development, and technical communication.":"Tham gia phát triển robot phục hồi chức năng, cơ cấu mềm, chế tạo cơ cấu chấp hành, xây dựng hệ thí nghiệm và truyền đạt kỹ thuật.",
+    "UAV integration, PX4 offboard control, and flight testing":"Tích hợp UAV, điều khiển PX4 offboard và thử nghiệm bay","Soft robotics and human-centered robotic systems":"Robot mềm và hệ thống robot lấy con người làm trung tâm","Prototyping, fabrication, and experimentation":"Tạo mẫu, chế tạo và thực nghiệm","Research Assistant at VinUni Biorobotics Lab":"Trợ lý Nghiên cứu tại Phòng thí nghiệm Biorobotics VinUni","Undergraduate Researcher at VinUni Biorobotics Lab":"Nghiên cứu viên Đại học tại Phòng thí nghiệm Biorobotics VinUni","UAV Engineering Intern at Phenikaa-X":"Thực tập sinh Kỹ thuật UAV tại Phenikaa-X",
+    "Designed a battery-holder retrofit for a Holybro X500 platform, implemented PX4 offboard velocity control for GPS-denied flight, supported AprilTag-based localization and camera deployment, and participated in real-world testing as a test pilot.":"Thiết kế bộ gá pin cải tiến cho nền tảng Holybro X500, triển khai điều khiển vận tốc PX4 offboard cho bay không GPS, hỗ trợ định vị bằng AprilTag và tích hợp camera, đồng thời tham gia thử nghiệm thực tế với vai trò phi công thử nghiệm.",
+    "View internship details →":"Xem chi tiết kỳ thực tập →",
+    "Journal manuscript · Under review":"Bài báo tạp chí · Đang phản biện","Journal manuscript · Submitted 4 July 2026":"Bài báo tạp chí · Nộp ngày 4 tháng 7 năm 2026","Conference paper · ICARCV 2026":"Bài báo hội nghị · ICARCV 2026","Academic recognition":"Ghi nhận học thuật","Graduate admission":"Trúng tuyển cao học","Submitted to Sensors and Actuators A: Physical.":"Đã nộp tới tạp chí Sensors and Actuators A: Physical.","Submitted to the Journal of Intelligent & Robotic Systems.":"Đã nộp tới Journal of Intelligent & Robotic Systems.","Submitted to the 2026 19th International Conference on Control, Automation, Robotics and Vision.":"Đã nộp tới Hội nghị Quốc tế lần thứ 19 về Điều khiển, Tự động hóa, Robot và Thị giác năm 2026.","Dean’s List · Spring 2025":"Danh sách Dean · Học kỳ Xuân 2025","Recognized for academic performance at VinUniversity.":"Được VinUniversity ghi nhận thành tích học tập.","University of Pennsylvania · Robotics":"Đại học Pennsylvania · Robotics","Admitted to the University of Pennsylvania Master’s program in Robotics.":"Được nhận vào chương trình Thạc sĩ Robotics của Đại học Pennsylvania.",
+    "Professional credentials":"Chứng chỉ chuyên môn","Professional":"Chuyên nghiệp","Associate":"Cơ bản","Issued July 29, 2026":"Cấp ngày 29 tháng 7 năm 2026","Issued May 16, 2026":"Cấp ngày 16 tháng 5 năm 2026","Credential ID:":"Mã chứng chỉ:","View certificate":"Xem chứng chỉ","Verify credential":"Xác minh chứng chỉ",
+    "Robotics and engineering projects":"Các dự án robot và kỹ thuật","Detailed project pages, current media, research status, and technical documentation. Gallery-only content is hidden for now to keep the portfolio focused.":"Các trang dự án chi tiết, hình ảnh và video hiện có, trạng thái nghiên cứu và tài liệu kỹ thuật. Nội dung chỉ mang tính thư viện ảnh tạm thời được ẩn để giữ trọng tâm cho hồ sơ.",
+    "UAV / Robotics":"UAV / Robot","Independent Project / UAV":"Dự án cá nhân / UAV","Research / Soft Robotics":"Nghiên cứu / Robot mềm","Research / Humanoid Robotics":"Nghiên cứu / Robot hình người","Ongoing Research / Soft Robotics":"Nghiên cứu đang thực hiện / Robot mềm","Intelligent Physical System":"Hệ thống Vật lý Thông minh","Robotics and Automation":"Robot và Tự động hóa","Mechanical Synthesis":"Tổng hợp Cơ khí","Mechatronics":"Cơ điện tử","Mechatronic":"Cơ điện tử","Introduction to CECS":"Nhập môn CECS","Intro to CECS":"Nhập môn CECS",
+    "Custom Quadcopter Using Teensy 4.1 and MPU6050":"Quadcopter tùy chỉnh sử dụng Teensy 4.1 và MPU6050","Hybrid Soft Muscle–Tendon Rehabilitation Glove":"Găng tay phục hồi chức năng kết hợp cơ mềm và gân","Teleoperated Humanoid Robotic Hand with Soft Filament Sensor":"Bàn tay robot hình người điều khiển từ xa sử dụng cảm biến sợi mềm","Double-Attack Mechanical Thrombectomy":"Thiết bị lấy huyết khối cơ học tác động kép","Automatic Tool-Interchange System for a Humanoid Robotic Arm":"Hệ thống tự động thay đổi dụng cụ cho cánh tay robot hình người","Automated Whiteboard-Pen Refill Machine":"Máy tự động nạp lại mực bút bảng trắng","Hand-Gesture-Controlled Robot for Environmental Surveying":"Robot khảo sát môi trường điều khiển bằng cử chỉ tay","MiniHawk VTOL Tilt-Rotor Tricopter":"MiniHawk VTOL ba cánh quạt nghiêng","Wireless Water-Quality Monitoring and Mapping System":"Hệ thống giám sát và lập bản đồ chất lượng nước không dây",
+    "Manuscripts and ongoing work":"Bài báo và nghiên cứu đang thực hiện","Current publication status and public-release notes for ongoing soft-robotics and robotic-system research.":"Trạng thái công bố hiện tại và ghi chú phát hành công khai cho các nghiên cứu robot mềm và hệ thống robot đang thực hiện.","Selected Research Projects":"Các dự án nghiên cứu tiêu biểu","Public release status":"Trạng thái công bố công khai","Some research media, figures, and manuscript files are intentionally not public yet. Approved photos, videos, posters, and paper links will be added after publication or permission.":"Một số hình ảnh, hình minh họa và bản thảo nghiên cứu hiện chưa được công khai. Ảnh, video, poster và liên kết bài báo được phê duyệt sẽ được bổ sung sau khi công bố hoặc có sự cho phép.","First author; manuscript under review.":"Tác giả thứ nhất; bản thảo đang được phản biện.","Co-first author; manuscript under review.":"Đồng tác giả thứ nhất; bản thảo đang được phản biện.","First author; ongoing research and manuscript under review.":"Tác giả thứ nhất; nghiên cứu đang tiếp tục và bản thảo đang được phản biện.",
+    "Overview":"Tổng quan","System Overview":"Tổng quan hệ thống","Project Overview":"Tổng quan dự án","Design and Development":"Thiết kế và phát triển","System Architecture":"Kiến trúc hệ thống","Mechanical Design":"Thiết kế cơ khí","Electronics and Control":"Điện tử và điều khiển","Experimental Setup":"Thiết lập thí nghiệm","Results":"Kết quả","Testing and Results":"Thử nghiệm và kết quả","Simulation":"Mô phỏng","Simulation and Pipeline Validation":"Mô phỏng và xác nhận quy trình","Real-World Deployment":"Triển khai thực tế","Development Process":"Quá trình phát triển","Hardware Development":"Phát triển phần cứng","Software and Control":"Phần mềm và điều khiển","Flight Testing":"Thử nghiệm bay","Demonstration Videos":"Video trình diễn","Videos":"Video","Documents":"Tài liệu","Project Documents":"Tài liệu dự án","Project Document":"Tài liệu dự án","Technical Details":"Chi tiết kỹ thuật","Key Features":"Đặc điểm chính","Prototype and Development":"Nguyên mẫu và quá trình phát triển","Prototype and Integration":"Nguyên mẫu và tích hợp","System Demonstrations":"Trình diễn hệ thống","System and Development":"Hệ thống và quá trình phát triển","Demonstration":"Trình diễn","Design and Fabrication":"Thiết kế và chế tạo","Build and Flight Demonstrations":"Trình diễn chế tạo và bay","YouTube Videos":"Video YouTube","System Design and Interface":"Thiết kế hệ thống và giao diện","Flight-Control Development and Tuning":"Phát triển và tinh chỉnh điều khiển bay","Mechanical Design and Structural Validation":"Thiết kế cơ khí và kiểm chứng kết cấu","Build Timelapse":"Video tua nhanh quá trình chế tạo","First Takeoff":"Lần cất cánh đầu tiên","Development Tests":"Các thử nghiệm phát triển","Demo Day":"Ngày trình diễn","Current Scope":"Phạm vi hiện tại","Public Release Status":"Trạng thái công bố công khai","Development and Testing":"Phát triển và thử nghiệm","Flight-Test Hardware and Field Work":"Phần cứng thử nghiệm bay và công việc hiện trường","Flight and System Demonstrations":"Trình diễn bay và hệ thống","Technical Areas":"Các lĩnh vực kỹ thuật","Reports and Documentation":"Báo cáo và tài liệu","Internship Overview":"Tổng quan kỳ thực tập","Personal Note":"Ghi chú cá nhân",
+    "My Contribution and Personal Note":"Đóng góp cá nhân và ghi chú","This section will be completed with my specific role, technical decisions, lessons learned, and the parts of the system I personally designed, implemented, or tested.":"Phần này sẽ được hoàn thiện với vai trò cụ thể, các quyết định kỹ thuật, bài học kinh nghiệm và những phần hệ thống mà tôi trực tiếp thiết kế, triển khai hoặc thử nghiệm.","← Back to projects":"← Quay lại danh sách dự án","← Back to experience":"← Quay lại phần kinh nghiệm","Back to projects":"Quay lại danh sách dự án","Original Project":"Dự án gốc","Original GitHub Repository":"Kho GitHub gốc","Original GitHub Project":"Dự án GitHub gốc","Original Hackaday Page":"Trang Hackaday gốc","Hackaday Project Page":"Trang dự án Hackaday","Source and Attribution":"Nguồn và ghi nhận","Final Presentation":"Bài thuyết trình cuối kỳ","Final Report":"Báo cáo cuối kỳ","Proposal Presentation":"Bài thuyết trình đề xuất","Progress Report":"Báo cáo tiến độ","Proposal Report":"Báo cáo đề xuất","Project Presentation":"Bài thuyết trình dự án","Sensor Calibration Data":"Dữ liệu hiệu chuẩn cảm biến","Mechanical Synthesis Report":"Báo cáo Tổng hợp Cơ khí","Internship Report":"Báo cáo thực tập","Holybro Inspection Report":"Báo cáo kiểm tra Holybro","Flight Log Analysis":"Phân tích nhật ký bay","July Report":"Báo cáo tháng 7","August Report":"Báo cáo tháng 8","September Report":"Báo cáo tháng 9","October Report":"Báo cáo tháng 10",
+
+    "A fully custom quadcopter developed from mechanical design through embedded flight control, constrained testing, PID tuning, structural refinement, and successful free flight.":"Một quadcopter hoàn toàn tùy chỉnh được phát triển từ thiết kế cơ khí, điều khiển bay nhúng, thử nghiệm có ràng buộc, tinh chỉnh PID, cải tiến kết cấu đến bay tự do thành công.",
+    "The vehicle uses a Teensy 4.1 as the flight controller, an MPU6050 inertial sensor, custom attitude-estimation and cascaded PID control code, and a lightweight X-frame. The project progressed through 3D-printed prototypes, a constrained test rig, vibration diagnosis, carbon-fiber redesign, ANSYS validation, motor-output tuning, and flight testing.":"Phương tiện sử dụng Teensy 4.1 làm bộ điều khiển bay, cảm biến quán tính MPU6050, mã ước lượng tư thế và điều khiển PID tầng do nhóm tự phát triển, cùng khung chữ X nhẹ. Dự án trải qua các nguyên mẫu in 3D, bệ thử có ràng buộc, chẩn đoán rung, thiết kế lại bằng sợi carbon, kiểm chứng ANSYS, tinh chỉnh đầu ra động cơ và thử nghiệm bay.",
+    "The first prototype was used to validate geometry and assembly. After vibration and stiffness issues were identified, the frame was redesigned using carbon-fiber plates and checked through structural and aerodynamic analysis.":"Nguyên mẫu đầu tiên được dùng để xác nhận hình học và khả năng lắp ráp. Sau khi phát hiện vấn đề về rung và độ cứng, khung được thiết kế lại bằng tấm sợi carbon và kiểm tra thông qua phân tích kết cấu và khí động học.",
+    "Designed the X-frame layout and 3D-printed integration parts.":"Thiết kế bố trí khung chữ X và các chi tiết tích hợp in 3D.","Evaluated stress and deformation using ANSYS.":"Đánh giá ứng suất và biến dạng bằng ANSYS.","Compared design iterations before moving to the final carbon-fiber structure.":"So sánh các vòng lặp thiết kế trước khi chuyển sang kết cấu sợi carbon cuối cùng.","Developed and assembled a constrained test rig for safe controller tuning.":"Phát triển và lắp ráp bệ thử có ràng buộc để tinh chỉnh bộ điều khiển an toàn.",
+    "The controller was implemented directly on the Teensy 4.1. Development included MPU6050 calibration, attitude estimation, nested angle-and-rate control, motor mixing, receiver input, telemetry, failsafe logic, and iterative PID tuning.":"Bộ điều khiển được triển khai trực tiếp trên Teensy 4.1. Quá trình phát triển bao gồm hiệu chuẩn MPU6050, ước lượng tư thế, điều khiển tầng góc và tốc độ góc, trộn động cơ, tín hiệu bộ thu, telemetry, logic an toàn và tinh chỉnh PID lặp lại.",
+    "Implemented custom cascaded PID control for roll, pitch, and yaw.":"Triển khai điều khiển PID tầng tùy chỉnh cho roll, pitch và yaw.","Diagnosed noisy IMU measurements and vibration-induced instability.":"Chẩn đoán tín hiệu IMU nhiễu và mất ổn định do rung.","Created a telemetry GUI to inspect angles, commands, and motor outputs.":"Tạo giao diện telemetry để theo dõi góc, lệnh và đầu ra động cơ.","Repeated constrained and free-flight tests until stable flight was achieved.":"Lặp lại thử nghiệm có ràng buộc và bay tự do cho đến khi đạt được chuyến bay ổn định.","First takeoff attempt":"Lần cất cánh đầu tiên","Demo Day 1":"Ngày trình diễn 1","Demo Day 2":"Ngày trình diễn 2","Demo Day 3":"Ngày trình diễn 3",
+
+    "An ongoing soft-robotics research project exploring a hybrid actuation approach for hand rehabilitation by combining compliant soft muscles with tendon-driven assistance.":"Một dự án nghiên cứu robot mềm đang thực hiện, khảo sát phương pháp truyền động lai cho phục hồi chức năng bàn tay bằng cách kết hợp cơ mềm có tính tuân thủ với hỗ trợ truyền động bằng gân.",
+    "Research status:":"Trạng thái nghiên cứu:","This project and its associated paper are still ongoing. Only currently approved public information and media are shown here; additional results, figures, and publication details will be added later.":"Dự án và bài báo liên quan vẫn đang được tiếp tục. Trang này chỉ hiển thị thông tin và nội dung đã được phép công khai; các kết quả, hình minh họa và thông tin xuất bản bổ sung sẽ được cập nhật sau.",
+    "The system is being developed as a wearable rehabilitation glove intended to assist finger flexion through lightweight, compliant actuation. The research focuses on integrating soft actuators, tendon transmission, wearable structure, control, and experimental validation into one practical platform.":"Hệ thống được phát triển như một găng tay phục hồi chức năng đeo được, hỗ trợ gập ngón tay bằng cơ cấu chấp hành nhẹ và mềm. Nghiên cứu tập trung tích hợp cơ cấu chấp hành mềm, truyền động gân, kết cấu đeo được, điều khiển và đánh giá thực nghiệm vào một nền tảng thực tiễn.",
+    "Co-first-author research contribution.":"Đóng góp nghiên cứu với vai trò đồng tác giả thứ nhất.","System design, prototype development, actuator fabrication, and integration.":"Thiết kế hệ thống, phát triển nguyên mẫu, chế tạo cơ cấu chấp hành và tích hợp.","Experimental evaluation of assisted hand motion and load capability.":"Đánh giá thực nghiệm chuyển động bàn tay được hỗ trợ và khả năng tải.","Current prototype performance includes more than 100% actuator elongation, more than 2.5 N output force, and assistance for lifting a 350 g load.":"Hiệu năng nguyên mẫu hiện tại gồm độ giãn cơ cấu chấp hành trên 100%, lực đầu ra trên 2,5 N và hỗ trợ nâng tải 350 g.",
+
+    "An ongoing research project integrating a tendon-driven humanoid hand, soft filament sensing, soft-muscle actuation, and MATLAB/Simulink-based control for real-time teleoperation.":"Một dự án nghiên cứu đang thực hiện, tích hợp bàn tay robot hình người truyền động bằng gân, cảm biến sợi mềm, cơ cấu chấp hành cơ mềm và điều khiển dựa trên MATLAB/Simulink cho teleoperation thời gian thực.",
+    "This project and its associated manuscript are still ongoing. Only currently approved public information and media are shown here.":"Dự án và bản thảo liên quan vẫn đang được tiếp tục. Trang này chỉ hiển thị thông tin và nội dung đã được phép công khai.",
+    "The platform combines a 3D-printed tendon-driven robotic hand with soft filament sensors that capture finger motion and soft muscle actuators that reproduce the user’s movements. The control pipeline was developed in MATLAB and Simulink for responsive teleoperation.":"Nền tảng kết hợp bàn tay robot truyền động bằng gân in 3D với cảm biến sợi mềm ghi nhận chuyển động ngón tay và cơ cấu chấp hành cơ mềm tái tạo chuyển động của người dùng. Quy trình điều khiển được phát triển trong MATLAB và Simulink để đạt teleoperation đáp ứng nhanh.",
+    "Designed and integrated the tendon-driven humanoid hand platform.":"Thiết kế và tích hợp nền tảng bàn tay robot hình người truyền động bằng gân.","Integrated soft filament sensors for finger-motion measurement.":"Tích hợp cảm biến sợi mềm để đo chuyển động ngón tay.","Developed servo-based control in MATLAB and Simulink.":"Phát triển điều khiển servo trong MATLAB và Simulink.","Achieved real-time teleoperation with system delay below 200 ms.":"Đạt teleoperation thời gian thực với độ trễ hệ thống dưới 200 ms.","Continuing experimental validation, refinement, and manuscript preparation.":"Tiếp tục đánh giá thực nghiệm, cải tiến hệ thống và chuẩn bị bản thảo.","Additional figures, videos, experimental results, and manuscript details will be added after publication or when permission for public release is available.":"Các hình minh họa, video, kết quả thực nghiệm và thông tin bản thảo bổ sung sẽ được cập nhật sau khi công bố hoặc khi có quyền phát hành công khai.",
+
+    "An ongoing soft-robotics research project combining rotational clot interaction with soft-actuator-driven axial reciprocation to improve localized clot engagement and aspiration.":"Một dự án nghiên cứu robot mềm đang thực hiện, kết hợp tương tác xoay với huyết khối và chuyển động tịnh tiến dọc trục do cơ cấu chấp hành mềm tạo ra nhằm cải thiện khả năng tiếp cận và hút huyết khối cục bộ.",
+    "Ongoing research project. The associated manuscript is currently under review, so only approved public information and media are shown here.":"Dự án nghiên cứu đang thực hiện. Bản thảo liên quan hiện đang được phản biện, vì vậy trang này chỉ hiển thị thông tin và nội dung đã được phép công khai.",
+    "The proof-of-concept device integrates two complementary mechanical actions at the distal end: controlled rotation and repeated axial motion. The research evaluates whether this combined interaction can improve clot engagement while remaining compatible with a compact catheter-scale architecture.":"Thiết bị kiểm chứng ý tưởng tích hợp hai chuyển động cơ học bổ trợ tại đầu xa: quay có kiểm soát và chuyển động dọc trục lặp lại. Nghiên cứu đánh giá liệu tương tác kết hợp này có thể cải thiện khả năng tiếp cận huyết khối trong khi vẫn tương thích với kiến trúc nhỏ gọn ở quy mô catheter hay không.",
+    "First-author research contribution and primary system development.":"Đóng góp nghiên cứu với vai trò tác giả thứ nhất và phát triển hệ thống chính.","Soft-actuator-driven axial reciprocation combined with rotational clot interaction.":"Chuyển động tịnh tiến dọc trục do cơ cấu chấp hành mềm tạo ra kết hợp với tương tác xoay với huyết khối.","Benchtop prototype design, fabrication, integration, and experimental testing.":"Thiết kế, chế tạo, tích hợp nguyên mẫu trên bàn thử và thực nghiệm.","Preliminary testing showed approximately 7% localized suction improvement.":"Thử nghiệm sơ bộ cho thấy mức cải thiện hút cục bộ khoảng 7%.",
+
+    "A group-led robotics project inspired by CNC tool-changing workflows, combining electromagnetic coupling, mechanical alignment, servo sequencing, and electrical contact integration for autonomous tool exchange.":"Một dự án robot do nhóm thực hiện, lấy cảm hứng từ quy trình thay dao CNC, kết hợp ghép nối điện từ, căn chỉnh cơ khí, trình tự servo và tích hợp tiếp điểm điện để tự động thay dụng cụ.",
+    "The system was designed to allow a humanoid robotic arm to automatically pick up, release, and exchange end-effectors at a dedicated tool station. The mechanism uses guided alignment features to position the tool, electromagnetic coupling to secure it, and integrated contact pins to transfer electrical power and signals after attachment.":"Hệ thống được thiết kế để cánh tay robot hình người tự động lấy, nhả và thay đổi cơ cấu chấp hành cuối tại một trạm dụng cụ chuyên dụng. Cơ cấu sử dụng các đặc trưng dẫn hướng để định vị dụng cụ, ghép nối điện từ để cố định và các chân tiếp xúc tích hợp để truyền nguồn điện và tín hiệu sau khi gắn.",
+    "Group leader responsible for overall planning and system integration.":"Trưởng nhóm phụ trách lập kế hoạch tổng thể và tích hợp hệ thống.","Mechanical design of the tool interface and exchange station.":"Thiết kế cơ khí giao diện dụng cụ và trạm thay dụng cụ.","Servo-controlled attachment and release sequence.":"Trình tự gắn và nhả được điều khiển bằng servo.","Electromagnetic coupling with integrated electrical contacts.":"Ghép nối điện từ với các tiếp điểm điện tích hợp.","Prototype fabrication, assembly, testing, and demonstration.":"Chế tạo, lắp ráp, thử nghiệm và trình diễn nguyên mẫu.",
+
+    "A mechatronic machine developed to automate the cleaning and ink-refilling process for reusable whiteboard pens, reducing manual work and supporting more sustainable laboratory and classroom use.":"Một máy cơ điện tử được phát triển để tự động hóa quá trình làm sạch và nạp mực cho bút bảng trắng tái sử dụng, giảm công việc thủ công và hỗ trợ sử dụng bền vững hơn trong phòng thí nghiệm và lớp học.",
+    "The machine coordinates pen handling, positioning, ink delivery, and enclosure-mounted mechanisms in a repeatable sequence. The project combined mechanical design, fabrication, assembly, electronics, and system-level testing in a complete working prototype.":"Máy phối hợp thao tác bút, định vị, cấp mực và các cơ cấu gắn trên vỏ theo một trình tự lặp lại. Dự án kết hợp thiết kế cơ khí, chế tạo, lắp ráp, điện tử và thử nghiệm cấp hệ thống trong một nguyên mẫu hoạt động hoàn chỉnh.",
+    "Main planner and system designer.":"Người lập kế hoạch chính và thiết kế hệ thống.","Mechanical fabrication, assembly, and integration.":"Chế tạo cơ khí, lắp ráp và tích hợp.","Automated operating sequence for pen handling and refill.":"Trình tự vận hành tự động cho thao tác và nạp mực bút.","CNC-cut acrylic enclosure and custom mechanical components.":"Vỏ acrylic cắt CNC và các chi tiết cơ khí tùy chỉnh.","Full prototype testing and demonstration.":"Thử nghiệm và trình diễn nguyên mẫu hoàn chỉnh.",
+
+    "A differential-drive mobile robot controlled through wearable IMUs, with a head-tracked camera gimbal and onboard environmental sensing for remote surveying tasks.":"Một robot di động dẫn động vi sai được điều khiển bằng IMU đeo trên người, tích hợp gimbal camera theo dõi chuyển động đầu và cảm biến môi trường trên xe cho các nhiệm vụ khảo sát từ xa.",
+    "The project combined wearable motion input, mobile-robot control, camera viewing, and environmental sensing in one integrated prototype. The available media documents the robot platform, wearable controller, electronics, testing process, and final demonstrations.":"Dự án kết hợp đầu vào chuyển động đeo trên người, điều khiển robot di động, quan sát bằng camera và cảm biến môi trường trong một nguyên mẫu tích hợp. Nội dung hiện có ghi lại nền tảng robot, bộ điều khiển đeo tay, điện tử, quá trình thử nghiệm và các trình diễn cuối cùng.",
+    "Differential-drive mobile robot platform":"Nền tảng robot di động dẫn động vi sai","Wearable IMU-based hand-gesture control":"Điều khiển cử chỉ tay dựa trên IMU đeo trên người","Head-tracked camera gimbal":"Gimbal camera theo dõi chuyển động đầu","Onboard environmental sensing":"Cảm biến môi trường tích hợp trên xe","Integrated electronics, fabrication, and system testing":"Tích hợp điện tử, chế tạo và thử nghiệm hệ thống",
+
+    "A hands-on build and flight-testing project based on Stephen Carlson’s open-source MiniHawk VTOL design. The aircraft combines vertical takeoff and landing with fixed-wing forward flight using two tilting front motors and one rear lift motor.":"Một dự án chế tạo và thử nghiệm bay thực tế dựa trên thiết kế MiniHawk VTOL mã nguồn mở của Stephen Carlson. Máy bay kết hợp cất hạ cánh thẳng đứng với bay tiến kiểu cánh cố định bằng hai động cơ trước có thể nghiêng và một động cơ nâng phía sau.",
+    "This project focused on learning through fabrication, assembly, configuration, and flight testing of a compact 3D-printed VTOL aircraft. The original MiniHawk design is a tricopter and fixed-wing hybrid intended as an accessible platform for RC, FPV, and UAV experimentation.":"Dự án tập trung học thông qua chế tạo, lắp ráp, cấu hình và thử nghiệm bay một máy bay VTOL nhỏ gọn in 3D. Thiết kế MiniHawk gốc là nền tảng lai giữa tricopter và cánh cố định, hướng đến việc thử nghiệm RC, FPV và UAV một cách dễ tiếp cận.",
+    "Three-motor VTOL configuration with two tilting front nacelles":"Cấu hình VTOL ba động cơ với hai cụm động cơ trước có thể nghiêng","Fixed-wing forward-flight mode with elevon control":"Chế độ bay tiến cánh cố định với điều khiển elevon","3D-printed airframe fabrication and mechanical assembly":"Chế tạo khung máy bay in 3D và lắp ráp cơ khí","Servo alignment and tilt-mechanism setup":"Căn chỉnh servo và thiết lập cơ cấu nghiêng","Flight-controller configuration, ground testing, and iterative troubleshooting":"Cấu hình bộ điều khiển bay, thử nghiệm mặt đất và xử lý sự cố lặp lại",
+
+    "A connected water-monitoring prototype that measures pH, total dissolved solids, turbidity, and temperature, uploads readings through Wi-Fi, and visualizes location-based water conditions on an online map.":"Một nguyên mẫu giám sát nước kết nối, đo pH, tổng chất rắn hòa tan, độ đục và nhiệt độ, tải dữ liệu qua Wi-Fi và trực quan hóa tình trạng nước theo vị trí trên bản đồ trực tuyến.",
+    "The system combined a waterproof sensor unit, a Seeed Studio XIAO ESP32C3 controller, an LCD, wireless data transfer, Google Sheets data logging, ThingSpeak visualization, and a Google Maps interface. The map used color-coded markers to communicate water-quality conditions quickly.":"Hệ thống kết hợp cụm cảm biến chống nước, bộ điều khiển Seeed Studio XIAO ESP32C3, màn hình LCD, truyền dữ liệu không dây, ghi dữ liệu lên Google Sheets, trực quan hóa bằng ThingSpeak và giao diện Google Maps. Bản đồ sử dụng các điểm đánh dấu theo màu để thể hiện nhanh tình trạng chất lượng nước.",
+    "Measured pH, TDS, turbidity, and temperature.":"Đo pH, TDS, độ đục và nhiệt độ.","Applied calibration equations and median filtering to sensor readings.":"Áp dụng phương trình hiệu chuẩn và lọc trung vị cho dữ liệu cảm biến.","Uploaded measurements through Wi-Fi to Google Sheets and ThingSpeak.":"Tải số liệu qua Wi-Fi lên Google Sheets và ThingSpeak.","Displayed live values, graphs, and location markers through a web interface.":"Hiển thị giá trị trực tiếp, đồ thị và điểm đánh dấu vị trí qua giao diện web.","Used green, yellow, and red markers to indicate water-quality status.":"Sử dụng điểm đánh dấu xanh, vàng và đỏ để thể hiện trạng thái chất lượng nước.",
+    "The physical prototype integrated the sensing electronics into a sealed enclosure for submerged operation. My work focused on the casing, float and wire requirements, mechanical design, prototyping, and physical testing documented in the team report.":"Nguyên mẫu vật lý tích hợp điện tử cảm biến trong một vỏ kín để vận hành khi ngập nước. Công việc của tôi tập trung vào vỏ, yêu cầu phao và dây, thiết kế cơ khí, tạo mẫu và thử nghiệm vật lý được ghi lại trong báo cáo nhóm.",
+    "The report documents sensor calibration, wireless upload testing, website integration, and battery-runtime evaluation. During prototype testing, Google Sheets API delay was approximately 300 ms, ThingSpeak update delay was approximately 20 s, and the measured battery runtime was 2 days, 9 hours, and 24 minutes.":"Báo cáo ghi lại quá trình hiệu chuẩn cảm biến, thử nghiệm tải dữ liệu không dây, tích hợp website và đánh giá thời lượng pin. Trong thử nghiệm nguyên mẫu, độ trễ API Google Sheets khoảng 300 ms, độ trễ cập nhật ThingSpeak khoảng 20 giây và thời lượng pin đo được là 2 ngày 9 giờ 24 phút.",
+
+    "UAV Engineering Internship at Phenikaa-X":"Kỳ thực tập Kỹ thuật UAV tại Phenikaa-X","June 2025 – October 2025 · Hanoi, Vietnam":"Tháng 6 năm 2025 – Tháng 10 năm 2025 · Hà Nội, Việt Nam",
+    "An industry internship focused on UAV integration, PX4 offboard control, GPS-denied flight testing, AprilTag-based localization, and practical hardware development for a Holybro X500 platform.":"Kỳ thực tập công nghiệp tập trung vào tích hợp UAV, điều khiển PX4 offboard, thử nghiệm bay không GPS, định vị dựa trên AprilTag và phát triển phần cứng thực tế cho nền tảng Holybro X500.",
+    "I worked on a real UAV development workflow that connected mechanical design, onboard computing, flight-control software, camera deployment, and flight testing. The internship gave me direct experience with the challenges of integrating and validating autonomous aerial systems outside simulation.":"Tôi tham gia một quy trình phát triển UAV thực tế kết nối thiết kế cơ khí, máy tính trên xe, phần mềm điều khiển bay, triển khai camera và thử nghiệm bay. Kỳ thực tập mang lại kinh nghiệm trực tiếp về các thách thức khi tích hợp và xác nhận hệ thống bay tự hành ngoài môi trường mô phỏng.",
+    "Designed a battery-holder retrofit for a Holybro X500 UAV platform.":"Thiết kế bộ gá pin cải tiến cho nền tảng UAV Holybro X500.","Implemented and tested PX4 offboard velocity control for GPS-denied flight.":"Triển khai và thử nghiệm điều khiển vận tốc PX4 offboard cho bay không GPS.","Supported AprilTag-based localization and precision-landing development.":"Hỗ trợ phát triển định vị và hạ cánh chính xác dựa trên AprilTag.","Integrated onboard camera and companion-computer hardware.":"Tích hợp camera trên xe và phần cứng máy tính đồng hành.","Participated in real flight tests as a test pilot and system integrator.":"Tham gia thử nghiệm bay thực tế với vai trò phi công thử nghiệm và kỹ sư tích hợp hệ thống.","Collected test data and supported iterative troubleshooting of the complete UAV system.":"Thu thập dữ liệu thử nghiệm và hỗ trợ xử lý sự cố lặp lại cho toàn bộ hệ thống UAV.",
+    "PX4 and offboard control":"PX4 và điều khiển offboard","UAV mechanical integration":"Tích hợp cơ khí UAV","Raspberry Pi companion computing":"Máy tính đồng hành Raspberry Pi","AprilTag localization":"Định vị AprilTag","Camera deployment and real-world testing":"Triển khai camera và thử nghiệm thực tế","Flight preparation, piloting, and debugging":"Chuẩn bị bay, điều khiển và gỡ lỗi",
+    "Add a few sentences here about what you learned during the internship, the responsibility you handled, or how the experience shaped your interest in UAV autonomy.":"Bổ sung một vài câu về những gì bạn học được trong kỳ thực tập, trách nhiệm bạn đảm nhận hoặc cách trải nghiệm này định hình mối quan tâm của bạn đối với UAV tự hành.",
+
+    "This project was developed through simulation validation and real-world deployment. The system combines PX4, ROS 2, horizontal-LiDAR SLAM, vertical-LiDAR scan accumulation, UAV pose estimation, and AprilTag-based precision landing for indoor GPS-denied operation.":"Dự án được phát triển qua xác nhận mô phỏng và triển khai thực tế. Hệ thống kết hợp PX4, ROS 2, SLAM bằng LiDAR ngang, tích lũy quét LiDAR dọc, ước lượng tư thế UAV và hạ cánh chính xác dựa trên AprilTag để vận hành trong nhà không GPS.",
+    "A horizontal 2D LiDAR estimates the indoor map and supports localization, while a second LiDAR is mounted vertically to collect cross-sectional scans. These scans are transformed using the UAV pose and accumulated into a global 3D point cloud. A downward-facing camera supports AprilTag detection and local-frame precision landing.":"Một LiDAR 2D đặt ngang xây dựng bản đồ trong nhà và hỗ trợ định vị, trong khi LiDAR thứ hai đặt dọc thu thập các lát quét mặt cắt. Các lát quét được biến đổi theo tư thế UAV và tích lũy thành đám mây điểm 3D toàn cục. Camera hướng xuống hỗ trợ phát hiện AprilTag và hạ cánh chính xác trong hệ tọa độ cục bộ.",
+    "The software architecture was first validated in PX4 SITL, ROS 2, Gazebo, and RViz. This work tested survey trajectories, coordinate frames, LiDAR orientation, pose synchronization, scan transformation, and 3D point-cloud generation before deployment on hardware.":"Kiến trúc phần mềm trước tiên được xác nhận trong PX4 SITL, ROS 2, Gazebo và RViz. Công việc này kiểm tra quỹ đạo khảo sát, hệ tọa độ, hướng LiDAR, đồng bộ tư thế, biến đổi lát quét và tạo đám mây điểm 3D trước khi triển khai lên phần cứng.",
+    "Tested lawnmower, spiral, and diagonal survey trajectories.":"Thử nghiệm các quỹ đạo khảo sát zíc zắc, xoắn ốc và chéo.","Used a virtual horizontal LiDAR for 2D SLAM.":"Sử dụng LiDAR ngang ảo cho SLAM 2D.","Used a virtual vertical LiDAR for sequential environmental scans.":"Sử dụng LiDAR dọc ảo để quét môi trường tuần tự.","Combined scan data with UAV pose estimates to reconstruct a 3D point cloud.":"Kết hợp dữ liệu quét với ước lượng tư thế UAV để tái tạo đám mây điểm 3D.","2D SLAM Demo":"Trình diễn SLAM 2D","3D Mapping Demo":"Trình diễn lập bản đồ 3D","Simulated 3D reconstruction":"Tái tạo 3D trong mô phỏng","Global point cloud generated by accumulating transformed vertical-LiDAR scans.":"Đám mây điểm toàn cục được tạo bằng cách tích lũy các lát quét LiDAR dọc sau biến đổi.","Mechanical integration concept":"Ý tưởng tích hợp cơ khí","CAD configuration showing the UAV frame and LiDAR mounting arrangement.":"Cấu hình CAD thể hiện khung UAV và cách bố trí lắp LiDAR.","2D SLAM simulation":"Mô phỏng SLAM 2D","PX4 SITL and ROS 2 mapping workflow.":"Quy trình lập bản đồ bằng PX4 SITL và ROS 2.","3D mapping simulation":"Mô phỏng lập bản đồ 3D","Vertical scan accumulation and point-cloud reconstruction.":"Tích lũy lát quét dọc và tái tạo đám mây điểm.",
+    "The pipeline was then deployed on a custom PX4 UAV with a Raspberry Pi 5. Testing covered physical sensor integration, horizontal-LiDAR indoor SLAM, vertical-LiDAR scan accumulation, AprilTag pose estimation, and precision landing. The real 3D reconstruction pipeline is functional but remains under active improvement.":"Quy trình sau đó được triển khai trên UAV PX4 tùy chỉnh với Raspberry Pi 5. Thử nghiệm bao gồm tích hợp cảm biến vật lý, SLAM trong nhà bằng LiDAR ngang, tích lũy quét LiDAR dọc, ước lượng tư thế AprilTag và hạ cánh chính xác. Quy trình tái tạo 3D thực tế đã hoạt động nhưng vẫn đang được tiếp tục cải tiến.",
+    "Integrated PX4 flight control, Raspberry Pi 5, LiDAR sensors, and a downward-facing camera.":"Tích hợp điều khiển bay PX4, Raspberry Pi 5, các cảm biến LiDAR và camera hướng xuống.","Deployed horizontal-LiDAR indoor SLAM on the physical vehicle.":"Triển khai SLAM trong nhà bằng LiDAR ngang trên phương tiện thực.","Collected and accumulated real vertical-LiDAR scans into global point-cloud files.":"Thu thập và tích lũy các lát quét LiDAR dọc thực thành các tệp đám mây điểm toàn cục.","Tested AprilTag detection, local pose estimation, and precision landing without GPS.":"Thử nghiệm phát hiện AprilTag, ước lượng tư thế cục bộ và hạ cánh chính xác không GPS.","Performed flight testing, power debugging, ROS 2 integration, and map-quality evaluation.":"Thực hiện thử nghiệm bay, gỡ lỗi nguồn, tích hợp ROS 2 và đánh giá chất lượng bản đồ.","Precision landing demonstration":"Trình diễn hạ cánh chính xác","Real AprilTag-guided landing test using PX4 and the local-position pipeline.":"Thử nghiệm hạ cánh thực được dẫn hướng bằng AprilTag, sử dụng PX4 và quy trình vị trí cục bộ.","Final hardware setup":"Cấu hình phần cứng cuối cùng","Complete deployed UAV configuration with onboard sensing and companion computer.":"Cấu hình UAV triển khai hoàn chỉnh với cảm biến trên xe và máy tính đồng hành.","Real indoor 2D SLAM":"SLAM 2D trong nhà thực tế","Two occupancy-map results from physical deployment.":"Hai kết quả bản đồ chiếm chỗ từ triển khai thực tế.","Real vertical-LiDAR reconstruction":"Tái tạo thực tế bằng LiDAR dọc","Accumulated point cloud from real scans.":"Đám mây điểm tích lũy từ các lát quét thực.","Precision-landing setup":"Thiết lập hạ cánh chính xác","Landing-marker placement, UAV preparation, and the physical test area.":"Bố trí mốc hạ cánh, chuẩn bị UAV và khu vực thử nghiệm thực tế.","AprilTag pose verification":"Xác nhận tư thế AprilTag","Camera image, pose output, and RViz frame visualization.":"Ảnh camera, đầu ra tư thế và trực quan hóa hệ tọa độ trong RViz.","Pose and local-position debugging":"Gỡ lỗi tư thế và vị trí cục bộ","ROS 2 pose output and PX4 XY trajectory used to verify frames and localization.":"Đầu ra tư thế ROS 2 và quỹ đạo XY PX4 được dùng để xác nhận hệ tọa độ và định vị.","3D Reconstruction Development":"Phát triển tái tạo 3D",
+    "The additional results below document the progression from sparse and unstable point clouds to denser room reconstruction, together with the rate, deskew, alignment, and floor-layer issues encountered during development.":"Các kết quả bổ sung bên dưới ghi lại quá trình từ đám mây điểm thưa và không ổn định đến tái tạo phòng dày đặc hơn, cùng các vấn đề về tần số, khử méo chuyển động, căn chỉnh và lớp sàn gặp phải trong quá trình phát triển.","Early sparse reconstruction":"Tái tạo thưa giai đoạn đầu","Initial overlay and standalone point-cloud results before the processing-rate and synchronization problems were corrected.":"Các kết quả chồng lớp và đám mây điểm độc lập ban đầu trước khi các vấn đề về tốc độ xử lý và đồng bộ được khắc phục.",
+    "© 2026 Le Hai Trung. Built with HTML, CSS, and GitHub Pages.":"© 2026 Le Hai Trung. Được xây dựng bằng HTML, CSS và GitHub Pages.","Built with HTML, CSS, and GitHub Pages.":"Được xây dựng bằng HTML, CSS và GitHub Pages."
   };
 
   const phraseRules = [
-    [/^Next project:\s*/i, "Dự án tiếp theo: "],
-    [/^Open the /i, "Mở dự án "],
-    [/^Research status:\s*/i, "Trạng thái nghiên cứu: "],
-    [/^Team of (\d+)/i, "Nhóm $1 người"],
-    [/^Team project/i, "Dự án nhóm"],
-    [/^Individual project/i, "Dự án cá nhân"],
-    [/^Ongoing research/i, "Nghiên cứu đang thực hiện"],
-    [/^Under review/i, "Đang phản biện"],
-    [/^Completed/i, "Đã hoàn thành"],
-    [/^Spring /i, "Học kỳ Xuân "],
-    [/^Fall /i, "Học kỳ Thu "]
+    [/^Next project:\s*/i,"Dự án tiếp theo: "],[/^Open the /i,"Mở dự án "],[/^Research status:\s*/i,"Trạng thái nghiên cứu: "],[/^Team of (\d+)/i,"Nhóm $1 người"],[/^Team project/i,"Dự án nhóm"],[/^Individual project/i,"Dự án cá nhân"],[/^Ongoing research/i,"Nghiên cứu đang thực hiện"],[/^Under review/i,"Đang phản biện"],[/^Completed/i,"Đã hoàn thành"],[/^Spring /i,"Học kỳ Xuân "],[/^Fall /i,"Học kỳ Thu "]
   ];
 
-  const originalText = new WeakMap();
-  const originalAttributes = new WeakMap();
+  const originals = new WeakMap();
+  const originalAttrs = new WeakMap();
+  const originalTitle = document.title;
 
-  function translateValue(value) {
-    const trimmed = value.trim();
-    if (!trimmed) return value;
-    let translated = vi[trimmed];
-    if (!translated) {
-      translated = trimmed;
-      phraseRules.forEach(([rule, replacement]) => {
-        translated = translated.replace(rule, replacement);
-      });
-      if (translated === trimmed) return value;
-    }
-    const leading = value.match(/^\s*/)?.[0] || "";
-    const trailing = value.match(/\s*$/)?.[0] || "";
-    return `${leading}${translated}${trailing}`;
+  function translateValue(value){
+    const t=value.trim(); if(!t) return value;
+    let out=vi[t];
+    if(!out){out=t; for(const [r,repl] of phraseRules) out=out.replace(r,repl); if(out===t) return value;}
+    return (value.match(/^\s*/)?.[0]||"")+out+(value.match(/\s*$/)?.[0]||"");
   }
 
-  function collectTextNodes(root = document.body) {
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-      acceptNode(node) {
-        const parent = node.parentElement;
-        if (!parent || ["SCRIPT", "STYLE", "NOSCRIPT", "CODE", "PRE"].includes(parent.tagName)) {
-          return NodeFilter.FILTER_REJECT;
-        }
-        return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-      }
-    });
-    const nodes = [];
-    while (walker.nextNode()) nodes.push(walker.currentNode);
-    return nodes;
+  function textNodes(root=document.body){
+    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){const p=n.parentElement; if(!p||["SCRIPT","STYLE","NOSCRIPT","CODE","PRE"].includes(p.tagName)) return NodeFilter.FILTER_REJECT; return n.nodeValue.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}}); const a=[]; while(w.nextNode()) a.push(w.currentNode); return a;
   }
 
-  function applyLanguage(language) {
-    document.documentElement.lang = language === "vi" ? "vi" : "en";
-    collectTextNodes().forEach(node => {
-      if (!originalText.has(node)) originalText.set(node, node.nodeValue);
-      const source = originalText.get(node);
-      node.nodeValue = language === "vi" ? translateValue(source) : source;
-    });
-
-    document.querySelectorAll("[alt],[title],[aria-label],[placeholder]").forEach(element => {
-      if (!originalAttributes.has(element)) originalAttributes.set(element, {});
-      const stored = originalAttributes.get(element);
-      ["alt", "title", "aria-label", "placeholder"].forEach(attribute => {
-        if (!element.hasAttribute(attribute)) return;
-        if (!(attribute in stored)) stored[attribute] = element.getAttribute(attribute);
-        const source = stored[attribute];
-        element.setAttribute(attribute, language === "vi" ? translateValue(source) : source);
-      });
-    });
-
-    if (language === "vi") {
-      document.title = document.title
-        .replace("Projects", "Dự án")
-        .replace("Research", "Nghiên cứu")
-        .replace("Portfolio", "Hồ sơ năng lực")
-        .replace("Experience", "Kinh nghiệm");
-    } else if (document.documentElement.dataset.originalTitle) {
-      document.title = document.documentElement.dataset.originalTitle;
-    }
-
-    const toggle = document.getElementById("language-toggle");
-    if (toggle) {
-      toggle.textContent = language === "vi" ? "EN" : "VI";
-      toggle.setAttribute("aria-label", language === "vi" ? "Switch to English" : "Chuyển sang tiếng Việt");
-      toggle.title = language === "vi" ? "English" : "Tiếng Việt";
-    }
+  function apply(language){
+    document.documentElement.lang=language;
+    textNodes().forEach(n=>{if(!originals.has(n)) originals.set(n,n.nodeValue); n.nodeValue=language==="vi"?translateValue(originals.get(n)):originals.get(n);});
+    document.querySelectorAll("[alt],[title],[aria-label],[placeholder]").forEach(el=>{if(!originalAttrs.has(el)) originalAttrs.set(el,{}); const s=originalAttrs.get(el); for(const a of ["alt","title","aria-label","placeholder"]){if(!el.hasAttribute(a)) continue; if(!(a in s)) s[a]=el.getAttribute(a); el.setAttribute(a,language==="vi"?translateValue(s[a]):s[a]);}});
+    document.title=language==="vi"?translateValue(originalTitle).replace("Projects","Dự án").replace("Research","Nghiên cứu").replace("Portfolio","Hồ sơ năng lực").replace("Experience","Kinh nghiệm"):originalTitle;
+    const b=document.getElementById("language-toggle"); if(b){b.textContent=language==="vi"?"EN":"VI"; b.setAttribute("aria-label",language==="vi"?"Chuyển sang tiếng Anh":"Chuyển sang tiếng Việt"); b.title=language==="vi"?"English":"Tiếng Việt";}
   }
 
-  document.documentElement.dataset.originalTitle = document.title;
-
-  const languageToggle = document.createElement("button");
-  languageToggle.id = "language-toggle";
-  languageToggle.className = "language-toggle";
-  languageToggle.type = "button";
-
-  const toggleStyle = document.createElement("style");
-  toggleStyle.textContent = `
-    .language-toggle{display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:38px;padding:0 12px;border-radius:999px;border:1px solid rgba(56,189,248,.32);background:rgba(56,189,248,.1);color:#e0f2fe;font-family:"Space Grotesk",sans-serif;font-size:.84rem;font-weight:800;letter-spacing:.06em;cursor:pointer;transition:.25s ease}
-    .language-toggle:hover{background:linear-gradient(135deg,#38bdf8,#2563eb);border-color:transparent;color:#fff;transform:translateY(-1px)}
-    .nav .language-toggle{margin-left:2px}
-    @media(max-width:760px){.nav .language-toggle{width:100%;margin:8px 0 0;justify-content:flex-start;padding-left:0;background:transparent;border:0;color:var(--accent)}}
-  `;
-  document.head.appendChild(toggleStyle);
-
-  const nav = document.getElementById("nav");
-  if (nav) nav.appendChild(languageToggle);
-  else document.body.prepend(languageToggle);
-
-  let language = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANGUAGE;
-  if (!['en', 'vi'].includes(language)) language = DEFAULT_LANGUAGE;
-  applyLanguage(language);
-
-  languageToggle.addEventListener("click", () => {
-    language = document.documentElement.lang === "vi" ? "en" : "vi";
-    localStorage.setItem(STORAGE_KEY, language);
-    applyLanguage(language);
-  });
+  const style=document.createElement("style"); style.textContent='.language-toggle{display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:38px;padding:0 12px;border-radius:999px;border:1px solid rgba(56,189,248,.32);background:rgba(56,189,248,.1);color:#e0f2fe;font-family:"Space Grotesk",sans-serif;font-size:.84rem;font-weight:800;letter-spacing:.06em;cursor:pointer;transition:.25s ease}.language-toggle:hover{background:linear-gradient(135deg,#38bdf8,#2563eb);border-color:transparent;color:#fff;transform:translateY(-1px)}.nav .language-toggle{margin-left:2px}@media(max-width:760px){.nav .language-toggle{width:100%;margin:8px 0 0;justify-content:flex-start;padding-left:0;background:transparent;border:0;color:var(--accent)}}'; document.head.appendChild(style);
+  const button=document.createElement("button"); button.id="language-toggle"; button.className="language-toggle"; button.type="button"; (document.getElementById("nav")||document.body).appendChild(button);
+  let language=localStorage.getItem(STORAGE_KEY)||DEFAULT_LANGUAGE; if(!["en","vi"].includes(language)) language=DEFAULT_LANGUAGE;
+  apply(language);
+  button.addEventListener("click",()=>{language=document.documentElement.lang==="vi"?"en":"vi"; localStorage.setItem(STORAGE_KEY,language); apply(language);});
+  new MutationObserver(()=>{if(document.documentElement.lang==="vi") apply("vi");}).observe(document.body,{childList:true,subtree:true});
 })();
