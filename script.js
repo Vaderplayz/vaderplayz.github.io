@@ -219,3 +219,11 @@ if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("show"); }), {threshold:.15});
   faders.forEach(el => observer.observe(el));
 } else { faders.forEach(el => el.classList.add("show")); }
+
+// ===============================
+// Bilingual site language switcher
+// ===============================
+const i18nScript = document.createElement("script");
+i18nScript.src = isNested ? "../i18n.js" : "i18n.js";
+i18nScript.defer = true;
+document.body.appendChild(i18nScript);
