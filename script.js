@@ -21,7 +21,9 @@ const projectDetails = [
   [4, "projects/teleoperated-humanoid-hand.html", "Open the teleoperated humanoid robotic hand project page"],
   [5, "projects/double-attack-thrombectomy.html", "Open the double-attack mechanical thrombectomy project page"],
   [6, "projects/tool-interchange-arm.html", "Open the automatic tool-interchange robotic arm project page"],
-  [7, "projects/automated-pen-refill-machine.html", "Open the automated whiteboard-pen refill machine project page"]
+  [7, "projects/automated-pen-refill-machine.html", "Open the automated whiteboard-pen refill machine project page"],
+  [8, "projects/gesture-controlled-survey-robot.html", "Open the hand-gesture-controlled environmental survey robot project page"],
+  [10, "projects/water-quality-monitoring.html", "Open the wireless water-quality monitoring and mapping project page"]
 ].map(([index, url, label]) => ({
   card: document.querySelector(`#projects .project-card:nth-child(${index})`),
   url,
@@ -66,7 +68,9 @@ const projectPageOrder = [
   { file: "teleoperated-humanoid-hand.html", name: "Teleoperated Humanoid Hand" },
   { file: "double-attack-thrombectomy.html", name: "Mechanical Thrombectomy" },
   { file: "tool-interchange-arm.html", name: "Tool-Interchange Arm" },
-  { file: "automated-pen-refill-machine.html", name: "Pen Refill Machine" }
+  { file: "automated-pen-refill-machine.html", name: "Pen Refill Machine" },
+  { file: "gesture-controlled-survey-robot.html", name: "Gesture-Controlled Survey Robot" },
+  { file: "water-quality-monitoring.html", name: "Water-Quality Monitoring System" }
 ];
 
 const currentProjectFile = window.location.pathname.split("/").pop();
