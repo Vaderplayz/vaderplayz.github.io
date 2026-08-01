@@ -1,4 +1,45 @@
 // ===============================
+// Portfolio typography
+// ===============================
+const fontLink = document.createElement("link");
+fontLink.rel = "stylesheet";
+fontLink.href = "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap";
+document.head.appendChild(fontLink);
+
+const typographyStyle = document.createElement("style");
+typographyStyle.textContent = `
+  body, button, input, textarea, select {
+    font-family: "Manrope", sans-serif !important;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .logo,
+  .section-label,
+  .project-type,
+  .eyebrow,
+  .timeline-stamp,
+  .certification-level {
+    font-family: "Space Grotesk", sans-serif !important;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.025em;
+  }
+
+  .hero h1,
+  .page-hero h1,
+  .project-detail h1,
+  .experience-detail h1 {
+    letter-spacing: -0.045em;
+  }
+
+  .logo {
+    letter-spacing: -0.04em;
+  }
+`;
+document.head.appendChild(typographyStyle);
+
+// ===============================
 // Mobile menu toggle
 // ===============================
 const menuToggle = document.getElementById("menu-toggle");
