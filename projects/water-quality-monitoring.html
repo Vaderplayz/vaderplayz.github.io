@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireless Water-Quality Monitoring and Mapping System | Le Hai Trung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail{padding:132px 0 96px}.project-detail h1{font-size:clamp(2.2rem,5vw,4rem);color:var(--heading);line-height:1.1;margin-bottom:16px}.project-meta{color:var(--accent);font-weight:700;margin-bottom:18px}.project-lead{max-width:940px;color:var(--muted);font-size:1.05rem;margin-bottom:28px}.detail-section{margin-top:42px}.detail-section h2{color:var(--heading);font-size:clamp(1.7rem,3vw,2.35rem);margin-bottom:10px}.detail-section p{color:var(--muted);max-width:980px}.detail-list{color:var(--muted);padding-left:20px;display:grid;gap:8px;margin-top:18px}.back-link{display:inline-flex;margin-bottom:28px;color:var(--accent);font-weight:700}.hero-image{display:block;width:100%;max-height:680px;object-fit:contain;margin-top:24px;border-radius:18px;border:1px solid var(--panel-border);background:#0b1120;box-shadow:var(--shadow)}.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}.media-item{overflow:hidden;border-radius:18px;border:1px solid var(--panel-border);background:#0b1120;box-shadow:var(--shadow)}.media-item img{display:block;width:100%;height:370px;object-fit:contain;background:#0b1120}.media-item.wide{grid-column:1/-1}.media-item.wide img{height:auto;max-height:720px}.document-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.document-links a{padding:10px 14px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.2);font-weight:700}@media(max-width:700px){.media-grid{grid-template-columns:1fr}.media-item.wide{grid-column:auto}.media-item img{height:auto;max-height:520px}}
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-header"><div class="container nav-container"><a href="../index.html#home" class="logo">LHT</a><nav class="nav" id="nav"><a href="../index.html#about">About</a><a href="../projects.html">Projects</a><a href="../index.html#experience">Experience</a><a href="../research.html">Research</a><a href="../index.html#certifications">Certifications</a><a href="../index.html#contact">Contact</a></nav><button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></header>
+
+  <main class="project-detail"><div class="container">
+    <a class="back-link" href="../projects.html">← Back to projects</a>
+    <h1>Wireless Water-Quality Monitoring and Mapping System</h1>
+    <p class="project-meta">Intro to CECS</p>
+    <p class="project-lead">A connected water-monitoring prototype that measures pH, total dissolved solids, turbidity, and temperature, uploads readings through Wi-Fi, and visualizes location-based water conditions on an online map.</p>
+    <img class="hero-image" src="../assets/projects/10-water-quality-monitoring/07_live_map_and_sensor_graphs.png" alt="Water-quality monitoring map and live sensor graphs" />
+
+    <section class="detail-section">
+      <h2>Project Overview</h2>
+      <p>The system combined a waterproof sensor unit, a Seeed Studio XIAO ESP32C3 controller, an LCD, wireless data transfer, Google Sheets data logging, ThingSpeak visualization, and a Google Maps interface. The map used color-coded markers to communicate water-quality conditions quickly.</p>
+      <ul class="detail-list">
+        <li>Measured pH, TDS, turbidity, and temperature.</li>
+        <li>Applied calibration equations and median filtering to sensor readings.</li>
+        <li>Uploaded measurements through Wi-Fi to Google Sheets and ThingSpeak.</li>
+        <li>Displayed live values, graphs, and location markers through a web interface.</li>
+        <li>Used green, yellow, and red markers to indicate water-quality status.</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>Hardware Development</h2>
+      <p>The physical prototype integrated the sensing electronics into a sealed enclosure for submerged operation. My work focused on the casing, float and wire requirements, mechanical design, prototyping, and physical testing documented in the team report.</p>
+      <div class="media-grid">
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/398404169_360711173097797_6233338556620510582_n.jpg" alt="Water monitoring system hardware development" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/415959192_687775183571714_1411867065872619913_n.jpg" alt="Water-quality sensing prototype" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/417264495_891940242671819_833570836395834007_n.jpg" alt="Sensor enclosure assembly" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/418211170_327089856489633_4430448723777892455_n.jpg" alt="Water monitoring electronics integration" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/418234731_315223824890580_7043973314874082741_n.jpg" alt="Water sensor prototype testing" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/418925647_798439842328339_3359957876708420159_n.jpg" alt="Water monitoring prototype enclosure" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/419007882_405482442169336_9045067035695723637_n.jpg" alt="Integrated sensor and controller hardware" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/420684138_409324768312221_1676319621904422109_n.jpg" alt="Completed water monitoring hardware" /></div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2>System Design and Interface</h2>
+      <div class="media-grid">
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/423422577_195101667029995_9159357416330017280_n.png" alt="Water monitoring system design" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/423472434_1886130958486945_7554219332265512039_n.png" alt="Water-quality monitoring interface" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/Untitled.png" alt="Water monitoring system diagram" /></div>
+        <div class="media-item"><img src="../assets/projects/10-water-quality-monitoring/Untitled2.png" alt="Water monitoring results and visualization" /></div>
+        <div class="media-item wide"><img src="../assets/projects/10-water-quality-monitoring/07_live_map_and_sensor_graphs.png" alt="Live water-quality map with sensor graphs" /></div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <h2>Testing and Results</h2>
+      <p>The report documents sensor calibration, wireless upload testing, website integration, and battery-runtime evaluation. During prototype testing, Google Sheets API delay was approximately 300 ms, ThingSpeak update delay was approximately 20 s, and the measured battery runtime was 2 days, 9 hours, and 24 minutes.</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>Project Documents</h2>
+      <div class="document-links">
+        <a href="../assets/projects/10-water-quality-monitoring/Report Intro to CECS Water monitoring system.pdf" target="_blank" rel="noopener noreferrer">Final Report</a>
+        <a href="../assets/projects/10-water-quality-monitoring/CECS1010_Final_Presentation_Group 2.pdf" target="_blank" rel="noopener noreferrer">Final Presentation</a>
+        <a href="../assets/projects/10-water-quality-monitoring/CECS1010_Presentation_Group 2.pdf" target="_blank" rel="noopener noreferrer">Project Presentation</a>
+        <a href="../assets/projects/10-water-quality-monitoring/Sensors-Calibration-Report.xlsx" target="_blank" rel="noopener noreferrer">Sensor Calibration Data</a>
+      </div>
+    </section>
+  </div></main>
+  <script src="../script.js"></script>
+</body>
+</html>
