@@ -202,8 +202,17 @@ if ("IntersectionObserver" in window) {
   faders.forEach(el => observer.observe(el));
 } else { faders.forEach(el => el.classList.add("show")); }
 
-// Bilingual site language switcher. Version query prevents browsers from reusing an older partial translation file.
+// Load the bilingual script without allowing its legacy self-triggering observer to freeze the page.
+const NativeMutationObserver = window.MutationObserver;
+window.MutationObserver = class SafeNoopMutationObserver {
+  observe() {}
+  disconnect() {}
+  takeRecords() { return []; }
+};
+
 const i18nScript = document.createElement("script");
-i18nScript.src = (isNested ? "../i18n.js" : "i18n.js") + "?v=20260801-complete-1";
+i18nScript.src = `${isNested ? "../i18n.js" : "i18n.js"}?v=20260802-freeze-fix`;
 i18nScript.defer = true;
+i18nScript.addEventListener("load", () => { window.MutationObserver = NativeMutationObserver; });
+i18nScript.addEventListener("error", () => { window.MutationObserver = NativeMutationObserver; });
 document.body.appendChild(i18nScript);
