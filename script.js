@@ -84,9 +84,6 @@ if (!document.getElementById("portfolio-person-schema")) {
 document.querySelectorAll("img:not([loading])").forEach((img, index) => { if (index > 1) img.loading = "lazy"; });
 document.querySelectorAll("video").forEach(video => { video.preload = "metadata"; });
 
-// ===============================
-// Mobile menu
-// ===============================
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav");
 if (menuToggle && nav) {
@@ -94,9 +91,6 @@ if (menuToggle && nav) {
   document.querySelectorAll(".nav a").forEach(link => link.addEventListener("click", () => nav.classList.remove("open")));
 }
 
-// ===============================
-// LinkedIn and homepage additions
-// ===============================
 const profileInfo = document.querySelector(".profile-info ul");
 if (profileInfo && !profileInfo.querySelector('a[href*="linkedin.com"]')) {
   const li = document.createElement("li");
@@ -152,9 +146,6 @@ if (footerContent && !footerContent.querySelector(".footer-linkedin")) {
   footerContent.appendChild(footerLinkedIn);
 }
 
-// ===============================
-// Project navigation
-// ===============================
 const projectDetails = [
   [1,"projects/dual-lidar-uav.html","Open the Dual-LiDAR UAV project"],
   [2,"projects/teensy-quadcopter.html","Open the custom quadcopter project"],
@@ -190,9 +181,6 @@ if (currentProjectIndex !== -1 && existingBackLink) {
   const nextLink = document.createElement("a"); nextLink.className = "next-project-link"; nextLink.href = nextProject[0]; nextLink.textContent = `Next project: ${nextProject[1]} →`; navRow.appendChild(nextLink);
 }
 
-// ===============================
-// My Contribution / Personal Note placeholder
-// ===============================
 const projectDetail = document.querySelector(".project-detail .container");
 if (projectDetail && !document.querySelector(".personal-project-note")) {
   const note = document.createElement("section");
@@ -201,9 +189,6 @@ if (projectDetail && !document.querySelector(".personal-project-note")) {
   projectDetail.appendChild(note);
 }
 
-// ===============================
-// Certifications
-// ===============================
 const contactSection = document.getElementById("contact");
 if (contactSection && !document.getElementById("certifications")) {
   const section = document.createElement("section"); section.id = "certifications"; section.className = "section";
@@ -211,19 +196,14 @@ if (contactSection && !document.getElementById("certifications")) {
   contactSection.parentNode.insertBefore(section, contactSection);
 }
 
-// ===============================
-// Reveal animation
-// ===============================
 const faders = document.querySelectorAll(".fade-up");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("show"); }), {threshold:.15});
   faders.forEach(el => observer.observe(el));
 } else { faders.forEach(el => el.classList.add("show")); }
 
-// ===============================
-// Bilingual site language switcher
-// ===============================
+// Bilingual site language switcher. Version query prevents browsers from reusing an older partial translation file.
 const i18nScript = document.createElement("script");
-i18nScript.src = isNested ? "../i18n.js" : "i18n.js";
+i18nScript.src = (isNested ? "../i18n.js" : "i18n.js") + "?v=20260801-complete-1";
 i18nScript.defer = true;
 document.body.appendChild(i18nScript);
