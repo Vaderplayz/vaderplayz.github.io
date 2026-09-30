@@ -31,9 +31,16 @@
     {
       title: "Lấy huyết khối tác động kép: Khái niệm catheter milli-spinner robot mềm hỗ trợ hút và thu giữ mảnh huyết khối",
       type: "Nghiên cứu / Robot mềm",
-      meta: "Học kỳ Xuân 2026 · Nhóm 2 người · Tác giả thứ nhất · Đang phản biện",
+      meta: "Học kỳ Xuân 2026 · Nhóm 2 người · Tác giả thứ nhất · Đã chấp nhận tại ICARCV 2026",
       description: "Khái niệm robot mềm lấy huyết khối được phát triển nhằm cải thiện lực hút cục bộ quanh catheter milli-spinner, giải quyết một hướng thiết kế tiên tiến nhưng hiện còn ít bằng chứng triển khai thực tế.",
-      tags: ["Robot mềm", "Lấy huyết khối", "ANSYS", "Phát triển ý tưởng", "ICARCV 2026"]
+      tags: ["Robot mềm", "Lấy huyết khối", "ANSYS", "Phát triển ý tưởng", "ICARCV 2026 - Đã chấp nhận"]
+    },
+    {
+      title: "Catheter lấy huyết khối tích hợp bộ truyền động mềm cho chuyển động quay đầu xa tốc độ cao và kéo dài trục cục bộ có kiểm soát",
+      type: "Nghiên cứu / Robot y tế",
+      meta: "2026–Hiện tại · Tác giả thứ nhất · Đã nộp ICRA 2027",
+      description: "Nghiên cứu catheter lấy huyết khối tích hợp bộ truyền động mềm được thiết kế để tạo chuyển động quay đầu xa tốc độ cao và kéo dài trục cục bộ có kiểm soát.",
+      tags: ["Lấy huyết khối", "Truyền động mềm", "Thiết kế catheter", "Robot y tế", "ICRA 2027"]
     },
     {
       title: "Hệ thống tự động thay dụng cụ cho cánh tay robot hình người",
