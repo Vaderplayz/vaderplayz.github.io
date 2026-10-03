@@ -152,11 +152,12 @@ const projectDetails = [
   [3,"projects/soft-robotic-glove.html","Open the soft robotic glove project"],
   [4,"projects/teleoperated-humanoid-hand.html","Open the teleoperated humanoid hand project"],
   [5,"projects/double-attack-thrombectomy.html","Open the thrombectomy project"],
-  [6,"projects/tool-interchange-arm.html","Open the tool-interchange project"],
-  [7,"projects/automated-pen-refill-machine.html","Open the pen-refill project"],
-  [8,"projects/gesture-controlled-survey-robot.html","Open the gesture survey robot project"],
-  [9,"projects/minihawk-vtol.html","Open the MiniHawk VTOL project"],
-  [10,"projects/water-quality-monitoring.html","Open the water-quality monitoring project"]
+  [6,"projects/soft-actuator-thrombectomy-catheter.html","Open the ICRA 2027 thrombectomy catheter project"],
+  [7,"projects/tool-interchange-arm.html","Open the tool-interchange project"],
+  [8,"projects/automated-pen-refill-machine.html","Open the pen-refill project"],
+  [9,"projects/gesture-controlled-survey-robot.html","Open the gesture survey robot project"],
+  [10,"projects/minihawk-vtol.html","Open the MiniHawk VTOL project"],
+  [11,"projects/water-quality-monitoring.html","Open the water-quality monitoring project"]
 ];
 projectDetails.forEach(([index,url,label]) => {
   const card = document.querySelector(`#projects .project-card:nth-child(${index})`);
@@ -168,7 +169,7 @@ projectDetails.forEach(([index,url,label]) => {
 });
 
 const projectPageOrder = [
-  ["dual-lidar-uav.html","Dual-LiDAR UAV"],["teensy-quadcopter.html","Teensy 4.1 Quadcopter"],["soft-robotic-glove.html","Soft Robotic Glove"],["teleoperated-humanoid-hand.html","Teleoperated Humanoid Hand"],["double-attack-thrombectomy.html","Mechanical Thrombectomy"],["tool-interchange-arm.html","Tool-Interchange Arm"],["automated-pen-refill-machine.html","Pen Refill Machine"],["gesture-controlled-survey-robot.html","Gesture-Controlled Survey Robot"],["minihawk-vtol.html","MiniHawk VTOL"],["water-quality-monitoring.html","Water-Quality Monitoring System"]
+  ["dual-lidar-uav.html","Dual-LiDAR UAV"],["teensy-quadcopter.html","Teensy 4.1 Quadcopter"],["soft-robotic-glove.html","Soft Robotic Glove"],["teleoperated-humanoid-hand.html","Teleoperated Humanoid Hand"],["double-attack-thrombectomy.html","Mechanical Thrombectomy"],["soft-actuator-thrombectomy-catheter.html","ICRA 2027 Thrombectomy Catheter"],["tool-interchange-arm.html","Tool-Interchange Arm"],["automated-pen-refill-machine.html","Pen Refill Machine"],["gesture-controlled-survey-robot.html","Gesture-Controlled Survey Robot"],["minihawk-vtol.html","MiniHawk VTOL"],["water-quality-monitoring.html","Water-Quality Monitoring System"]
 ];
 const currentProjectFile = window.location.pathname.split("/").pop();
 const currentProjectIndex = projectPageOrder.findIndex(([file]) => file === currentProjectFile);
